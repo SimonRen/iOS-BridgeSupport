@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<constant name='ADErrorDomain' type='@'/>
+<class name='ADBannerView'>
+<method selector='isBannerLoaded'>
+<retval type='B'/>
+</method>
+<method selector='isBannerViewActionInProgress'>
+<retval type='B'/>
+</method>
+</class>
+<class name='ADInterstitialAd'>
+<method selector='isActionInProgress'>
+<retval type='B'/>
+</method>
+<method selector='isLoaded'>
+<retval type='B'/>
+</method>
+<method selector='presentInView:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='NSObject'>
+<method selector='bannerViewActionShouldBegin:willLeaveApplication:'>
+<arg type='B' index='1'/>
+<retval type='B'/>
+</method>
+<method selector='interstitialAdActionShouldBegin:willLeaveApplication:'>
+<arg type='B' index='1'/>
+<retval type='B'/>
+</method>
+</class>
+<informal_protocol name='ADBannerViewDelegate'>
+<method type='v16@0:4@8@12' selector='bannerView:didFailToReceiveAdWithError:'/>
+<method type='v12@0:4@8' selector='bannerViewActionDidFinish:'/>
+<method type='B16@0:4@8B12' selector='bannerViewActionShouldBegin:willLeaveApplication:'/>
+<method type='v12@0:4@8' selector='bannerViewDidLoadAd:'/>
+</informal_protocol>
+<informal_protocol name='ADInterstitialAdDelegate'>
+<method type='v16@0:4@8@12' selector='interstitialAd:didFailWithError:'/>
+<method type='v12@0:4@8' selector='interstitialAdActionDidFinish:'/>
+<method type='B16@0:4@8B12' selector='interstitialAdActionShouldBegin:willLeaveApplication:'/>
+<method type='v12@0:4@8' selector='interstitialAdDidLoad:'/>
+<method type='v12@0:4@8' selector='interstitialAdDidUnload:'/>
+</informal_protocol>
+</signatures>

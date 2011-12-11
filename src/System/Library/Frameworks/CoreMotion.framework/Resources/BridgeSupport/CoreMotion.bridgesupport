@@ -1,0 +1,82 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<depends_on path='/System/Library/Frameworks/IOKit.framework'/>
+<depends_on path='/System/Library/Frameworks/IOKit.framework'/>
+<struct name='CMAcceleration' type='{_CMAcceleration=&quot;x&quot;d&quot;y&quot;d&quot;z&quot;d}'/>
+<struct name='CMQuaternion' type='{_CMQuaternion=&quot;x&quot;d&quot;y&quot;d&quot;z&quot;d&quot;w&quot;d}'/>
+<struct name='CMRotationMatrix' type='{_CMRotationMatrix=&quot;m11&quot;d&quot;m12&quot;d&quot;m13&quot;d&quot;m21&quot;d&quot;m22&quot;d&quot;m23&quot;d&quot;m31&quot;d&quot;m32&quot;d&quot;m33&quot;d}'/>
+<struct name='CMRotationRate' type='{_CMRotationRate=&quot;x&quot;d&quot;y&quot;d&quot;z&quot;d}'/>
+<constant name='CMErrorDomain' type='@'/>
+<enum name='CMErrorNULL' value='100'/>
+<class name='CMAccelerometerData'>
+<method selector='acceleration'>
+<retval type='{_CMAcceleration=ddd}'/>
+</method>
+</class>
+<class name='CMAttitude'>
+<method selector='quaternion'>
+<retval type='{_CMQuaternion=dddd}'/>
+</method>
+<method selector='rotationMatrix'>
+<retval type='{_CMRotationMatrix=ddddddddd}'/>
+</method>
+</class>
+<class name='CMDeviceMotion'>
+<method selector='gravity'>
+<retval type='{_CMAcceleration=ddd}'/>
+</method>
+<method selector='rotationRate'>
+<retval type='{_CMRotationRate=ddd}'/>
+</method>
+<method selector='userAcceleration'>
+<retval type='{_CMAcceleration=ddd}'/>
+</method>
+</class>
+<class name='CMGyroData'>
+<method selector='rotationRate'>
+<retval type='{_CMRotationRate=ddd}'/>
+</method>
+</class>
+<class name='CMMotionManager'>
+<method selector='isAccelerometerActive'>
+<retval type='B'/>
+</method>
+<method selector='isAccelerometerAvailable'>
+<retval type='B'/>
+</method>
+<method selector='isDeviceMotionActive'>
+<retval type='B'/>
+</method>
+<method selector='isDeviceMotionAvailable'>
+<retval type='B'/>
+</method>
+<method selector='isGyroActive'>
+<retval type='B'/>
+</method>
+<method selector='isGyroAvailable'>
+<retval type='B'/>
+</method>
+<method selector='startAccelerometerUpdatesToQueue:withHandler:'>
+<arg function_pointer='true' type='@?' index='1'>
+<arg type='@'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+</method>
+<method selector='startDeviceMotionUpdatesToQueue:withHandler:'>
+<arg function_pointer='true' type='@?' index='1'>
+<arg type='@'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+</method>
+<method selector='startGyroUpdatesToQueue:withHandler:'>
+<arg function_pointer='true' type='@?' index='1'>
+<arg type='@'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+</method>
+</class>
+</signatures>

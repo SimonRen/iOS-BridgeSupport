@@ -1,0 +1,241 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<depends_on path='/System/Library/Frameworks/IOKit.framework'/>
+<depends_on path='/System/Library/Frameworks/IOKit.framework'/>
+<struct name='MKCoordinateRegion' type='{_MKCoordinateRegion=&quot;center&quot;{?=&quot;latitude&quot;d&quot;longitude&quot;d}&quot;span&quot;{_MKCoordinateSpan=&quot;latitudeDelta&quot;d&quot;longitudeDelta&quot;d}}'/>
+<struct name='MKCoordinateSpan' type='{_MKCoordinateSpan=&quot;latitudeDelta&quot;d&quot;longitudeDelta&quot;d}'/>
+<constant name='MKAnnotationCalloutInfoDidChangeNotification' type='@'/>
+<constant name='MKErrorDomain' type='@'/>
+<enum name='MKErrorLoadingThrottled' value='3'/>
+<enum name='MKErrorPlacemarkNotFound' value='4'/>
+<enum name='MKErrorServerFailure' value='2'/>
+<enum name='MKErrorUnknown' value='1'/>
+<enum name='MKMapTypeHybrid' value='2'/>
+<enum name='MKMapTypeSatellite' value='1'/>
+<enum name='MKMapTypeStandard' value='0'/>
+<enum name='MKPinAnnotationColorGreen' value='1'/>
+<enum name='MKPinAnnotationColorPurple' value='2'/>
+<enum name='MKPinAnnotationColorRed' value='0'/>
+<function name='MKCoordinateRegionMake' inline='true'>
+<arg type='{_CLLocationCoordinate2D=dd}'/>
+<arg type='{_MKCoordinateSpan=dd}'/>
+<retval type='{_MKCoordinateRegion={?=dd}{_MKCoordinateSpan=dd}}'/>
+</function>
+<function name='MKCoordinateRegionMakeWithDistance'>
+<arg type='{_CLLocationCoordinate2D=dd}'/>
+<arg type='d'/>
+<arg type='d'/>
+<retval type='{_MKCoordinateRegion={?=dd}{_MKCoordinateSpan=dd}}'/>
+</function>
+<function name='MKCoordinateSpanMake' inline='true'>
+<arg type='d'/>
+<arg type='d'/>
+<retval type='{_MKCoordinateSpan=dd}'/>
+</function>
+<class name='MKAnnotationView'>
+<method selector='canShowCallout'>
+<retval type='B'/>
+</method>
+<method selector='isDraggable'>
+<retval type='B'/>
+</method>
+<method selector='isEnabled'>
+<retval type='B'/>
+</method>
+<method selector='isHighlighted'>
+<retval type='B'/>
+</method>
+<method selector='isSelected'>
+<retval type='B'/>
+</method>
+<method selector='setCanShowCallout:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setDraggable:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setEnabled:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setHighlighted:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setSelected:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setSelected:animated:'>
+<arg type='B' index='0'/>
+<arg type='B' index='1'/>
+</method>
+</class>
+<class name='MKCircle'>
+<method selector='circleWithCenterCoordinate:radius:' class_method='true'>
+<arg type='{_CLLocationCoordinate2D=dd}' index='0'/>
+</method>
+<method selector='coordinate'>
+<retval type='{_CLLocationCoordinate2D=dd}'/>
+</method>
+</class>
+<class name='MKMapView'>
+<method selector='centerCoordinate'>
+<retval type='{_CLLocationCoordinate2D=dd}'/>
+</method>
+<method selector='convertCoordinate:toPointToView:'>
+<arg type='{_CLLocationCoordinate2D=dd}' index='0'/>
+</method>
+<method selector='convertPoint:toCoordinateFromView:'>
+<retval type='{_CLLocationCoordinate2D=dd}'/>
+</method>
+<method selector='convertRect:toRegionFromView:'>
+<retval type='{_MKCoordinateRegion={?=dd}{_MKCoordinateSpan=dd}}'/>
+</method>
+<method selector='convertRegion:toRectToView:'>
+<arg type='{_MKCoordinateRegion={?=dd}{_MKCoordinateSpan=dd}}' index='0'/>
+</method>
+<method selector='deselectAnnotation:animated:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='isScrollEnabled'>
+<retval type='B'/>
+</method>
+<method selector='isUserLocationVisible'>
+<retval type='B'/>
+</method>
+<method selector='isZoomEnabled'>
+<retval type='B'/>
+</method>
+<method selector='region'>
+<retval type='{_MKCoordinateRegion={?=dd}{_MKCoordinateSpan=dd}}'/>
+</method>
+<method selector='regionThatFits:'>
+<arg type='{_MKCoordinateRegion={?=dd}{_MKCoordinateSpan=dd}}' index='0'/>
+<retval type='{_MKCoordinateRegion={?=dd}{_MKCoordinateSpan=dd}}'/>
+</method>
+<method selector='selectAnnotation:animated:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='setCenterCoordinate:'>
+<arg type='{_CLLocationCoordinate2D=dd}' index='0'/>
+</method>
+<method selector='setCenterCoordinate:animated:'>
+<arg type='{_CLLocationCoordinate2D=dd}' index='0'/>
+<arg type='B' index='1'/>
+</method>
+<method selector='setRegion:'>
+<arg type='{_MKCoordinateRegion={?=dd}{_MKCoordinateSpan=dd}}' index='0'/>
+</method>
+<method selector='setRegion:animated:'>
+<arg type='{_MKCoordinateRegion={?=dd}{_MKCoordinateSpan=dd}}' index='0'/>
+<arg type='B' index='1'/>
+</method>
+<method selector='setScrollEnabled:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setShowsUserLocation:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setVisibleMapRect:animated:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='setVisibleMapRect:edgePadding:animated:'>
+<arg type='B' index='2'/>
+</method>
+<method selector='setZoomEnabled:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='showsUserLocation'>
+<retval type='B'/>
+</method>
+</class>
+<class name='MKMultiPoint'>
+<method selector='getCoordinates:range:'>
+<arg type='^{_CLLocationCoordinate2D=dd}' index='0'/>
+</method>
+</class>
+<class name='MKOverlayView'>
+<method selector='canDrawMapRect:zoomScale:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='MKPinAnnotationView'>
+<method selector='animatesDrop'>
+<retval type='B'/>
+</method>
+<method selector='setAnimatesDrop:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='MKPlacemark'>
+<method selector='initWithCoordinate:addressDictionary:'>
+<arg type='{_CLLocationCoordinate2D=dd}' index='0'/>
+</method>
+</class>
+<class name='MKPointAnnotation'>
+<method selector='coordinate'>
+<retval type='{_CLLocationCoordinate2D=dd}'/>
+</method>
+<method selector='setCoordinate:'>
+<arg type='{_CLLocationCoordinate2D=dd}' index='0'/>
+</method>
+</class>
+<class name='MKPolygon'>
+<method selector='polygonWithCoordinates:count:' class_method='true'>
+<arg type='^{_CLLocationCoordinate2D=dd}' index='0'/>
+</method>
+<method selector='polygonWithCoordinates:count:interiorPolygons:' class_method='true'>
+<arg type='^{_CLLocationCoordinate2D=dd}' index='0'/>
+</method>
+</class>
+<class name='MKPolyline'>
+<method selector='polylineWithCoordinates:count:' class_method='true'>
+<arg type='^{_CLLocationCoordinate2D=dd}' index='0'/>
+</method>
+</class>
+<class name='MKReverseGeocoder'>
+<method selector='coordinate'>
+<retval type='{_CLLocationCoordinate2D=dd}'/>
+</method>
+<method selector='initWithCoordinate:'>
+<arg type='{_CLLocationCoordinate2D=dd}' index='0'/>
+</method>
+<method selector='isQuerying'>
+<retval type='B'/>
+</method>
+</class>
+<class name='MKUserLocation'>
+<method selector='isUpdating'>
+<retval type='B'/>
+</method>
+</class>
+<class name='NSObject'>
+<method selector='coordinate'>
+<retval type='{_CLLocationCoordinate2D=dd}'/>
+</method>
+<method selector='mapView:regionDidChangeAnimated:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='mapView:regionWillChangeAnimated:'>
+<arg type='B' index='1'/>
+</method>
+</class>
+<informal_protocol name='MKAnnotation'>
+<method type='{?=dd}8@0:4' selector='coordinate'/>
+<method type='@8@0:4' selector='subtitle'/>
+<method type='@8@0:4' selector='title'/>
+</informal_protocol>
+<informal_protocol name='MKMapViewDelegate'>
+<method type='v20@0:4@8@12@16' selector='mapView:annotationView:calloutAccessoryControlTapped:'/>
+<method type='v16@0:4@8@12' selector='mapView:didAddAnnotationViews:'/>
+<method type='v16@0:4@8B12' selector='mapView:regionDidChangeAnimated:'/>
+<method type='v16@0:4@8B12' selector='mapView:regionWillChangeAnimated:'/>
+<method type='@16@0:4@8@12' selector='mapView:viewForAnnotation:'/>
+<method type='v16@0:4@8@12' selector='mapViewDidFailLoadingMap:withError:'/>
+<method type='v12@0:4@8' selector='mapViewDidFinishLoadingMap:'/>
+<method type='v12@0:4@8' selector='mapViewWillStartLoadingMap:'/>
+</informal_protocol>
+<informal_protocol name='MKReverseGeocoderDelegate'>
+<method type='v16@0:4@8@12' selector='reverseGeocoder:didFailWithError:'/>
+<method type='v16@0:4@8@12' selector='reverseGeocoder:didFindPlacemark:'/>
+</informal_protocol>
+</signatures>

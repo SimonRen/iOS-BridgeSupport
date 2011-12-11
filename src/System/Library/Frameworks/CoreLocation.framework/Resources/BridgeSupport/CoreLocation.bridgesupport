@@ -1,0 +1,58 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<depends_on path='/System/Library/Frameworks/IOKit.framework'/>
+<depends_on path='/System/Library/Frameworks/IOKit.framework'/>
+<struct name='CLLocationCoordinate2D' type='{_CLLocationCoordinate2D=&quot;latitude&quot;d&quot;longitude&quot;d}'/>
+<constant name='kCLDistanceFilterNone' type='d'/>
+<constant name='kCLErrorDomain' type='@'/>
+<constant name='kCLHeadingFilterNone' type='d'/>
+<constant name='kCLLocationAccuracyBest' type='d'/>
+<constant name='kCLLocationAccuracyHundredMeters' type='d'/>
+<constant name='kCLLocationAccuracyKilometer' type='d'/>
+<constant name='kCLLocationAccuracyNearestTenMeters' type='d'/>
+<constant name='kCLLocationAccuracyThreeKilometers' type='d'/>
+<enum name='CLDeviceOrientationFaceDown' value='6'/>
+<enum name='CLDeviceOrientationFaceUp' value='5'/>
+<enum name='CLDeviceOrientationLandscapeLeft' value='3'/>
+<enum name='CLDeviceOrientationLandscapeRight' value='4'/>
+<enum name='CLDeviceOrientationPortrait' value='1'/>
+<enum name='CLDeviceOrientationPortraitUpsideDown' value='2'/>
+<enum name='CLDeviceOrientationUnknown' value='0'/>
+<enum name='kCLAuthorizationStatusAuthorized' value='3'/>
+<enum name='kCLAuthorizationStatusDenied' value='2'/>
+<enum name='kCLAuthorizationStatusNotDetermined' value='0'/>
+<enum name='kCLAuthorizationStatusRestricted' value='1'/>
+<enum name='kCLErrorDenied' value='1'/>
+<enum name='kCLErrorHeadingFailure' value='3'/>
+<enum name='kCLErrorLocationUnknown' value='0'/>
+<enum name='kCLErrorNetwork' value='2'/>
+<enum name='kCLErrorRegionMonitoringDenied' value='4'/>
+<enum name='kCLErrorRegionMonitoringFailure' value='5'/>
+<enum name='kCLErrorRegionMonitoringSetupDelayed' value='6'/>
+<class name='CLLocation'>
+<method selector='coordinate'>
+<retval type='{_CLLocationCoordinate2D=dd}'/>
+</method>
+<method selector='initWithCoordinate:altitude:horizontalAccuracy:verticalAccuracy:timestamp:'>
+<arg type='{_CLLocationCoordinate2D=dd}' index='0'/>
+</method>
+</class>
+<class name='CLLocationManager'>
+<method selector='headingAvailable'>
+<retval type='B'/>
+</method>
+<method selector='locationServicesEnabled'>
+<retval type='B'/>
+</method>
+</class>
+<class name='CLRegion'>
+<method selector='center'>
+<retval type='{_CLLocationCoordinate2D=dd}'/>
+</method>
+</class>
+<informal_protocol name='CLLocationManagerDelegate'>
+<method type='v16@0:4@8@12' selector='locationManager:didFailWithError:'/>
+<method type='v20@0:4@8@12@16' selector='locationManager:didUpdateToLocation:fromLocation:'/>
+</informal_protocol>
+</signatures>

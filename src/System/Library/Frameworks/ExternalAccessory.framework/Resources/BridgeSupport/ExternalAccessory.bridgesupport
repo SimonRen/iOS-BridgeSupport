@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<enum name='EAConnectionIDNone' value='0'/>
+<class name='EAAccessory'>
+<method selector='isConnected'>
+<retval type='B'/>
+</method>
+</class>
+</signatures>

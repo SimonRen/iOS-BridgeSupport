@@ -1,0 +1,192 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<constant name='MPMediaItemPropertyAlbumArtist' type='@'/>
+<constant name='MPMediaItemPropertyAlbumTitle' type='@'/>
+<constant name='MPMediaItemPropertyAlbumTrackCount' type='@'/>
+<constant name='MPMediaItemPropertyAlbumTrackNumber' type='@'/>
+<constant name='MPMediaItemPropertyArtist' type='@'/>
+<constant name='MPMediaItemPropertyArtwork' type='@'/>
+<constant name='MPMediaItemPropertyComposer' type='@'/>
+<constant name='MPMediaItemPropertyDiscCount' type='@'/>
+<constant name='MPMediaItemPropertyDiscNumber' type='@'/>
+<constant name='MPMediaItemPropertyGenre' type='@'/>
+<constant name='MPMediaItemPropertyIsCompilation' type='@'/>
+<constant name='MPMediaItemPropertyLastPlayedDate' type='@'/>
+<constant name='MPMediaItemPropertyLyrics' type='@'/>
+<constant name='MPMediaItemPropertyMediaType' type='@'/>
+<constant name='MPMediaItemPropertyPersistentID' type='@'/>
+<constant name='MPMediaItemPropertyPlayCount' type='@'/>
+<constant name='MPMediaItemPropertyPlaybackDuration' type='@'/>
+<constant name='MPMediaItemPropertyPodcastTitle' type='@'/>
+<constant name='MPMediaItemPropertyRating' type='@'/>
+<constant name='MPMediaItemPropertySkipCount' type='@'/>
+<constant name='MPMediaItemPropertyTitle' type='@'/>
+<constant name='MPMediaLibraryDidChangeNotification' type='@'/>
+<constant name='MPMediaPlaylistPropertyName' type='@'/>
+<constant name='MPMediaPlaylistPropertyPersistentID' type='@'/>
+<constant name='MPMediaPlaylistPropertyPlaylistAttributes' type='@'/>
+<constant name='MPMediaPlaylistPropertySeedItems' type='@'/>
+<constant name='MPMoviePlayerPlaybackDidFinishNotification' type='@'/>
+<constant name='MPMoviePlayerScalingModeDidChangeNotification' type='@'/>
+<constant name='MPMusicPlayerControllerNowPlayingItemDidChangeNotification' type='@'/>
+<constant name='MPMusicPlayerControllerPlaybackStateDidChangeNotification' type='@'/>
+<constant name='MPMusicPlayerControllerVolumeDidChangeNotification' type='@'/>
+<enum name='MPMediaGroupingAlbum' value='1'/>
+<enum name='MPMediaGroupingAlbumArtist' value='3'/>
+<enum name='MPMediaGroupingArtist' value='2'/>
+<enum name='MPMediaGroupingComposer' value='4'/>
+<enum name='MPMediaGroupingGenre' value='5'/>
+<enum name='MPMediaGroupingPlaylist' value='6'/>
+<enum name='MPMediaGroupingPodcastTitle' value='7'/>
+<enum name='MPMediaGroupingTitle' value='0'/>
+<enum name='MPMediaPlaylistAttributeGenius' value='4'/>
+<enum name='MPMediaPlaylistAttributeNone' value='0'/>
+<enum name='MPMediaPlaylistAttributeOnTheGo' value='1'/>
+<enum name='MPMediaPlaylistAttributeSmart' value='2'/>
+<enum name='MPMediaPredicateComparisonContains' value='1'/>
+<enum name='MPMediaPredicateComparisonEqualTo' value='0'/>
+<enum name='MPMediaTypeAny' value='-1'/>
+<enum name='MPMediaTypeAnyAudio' value='255'/>
+<enum name='MPMediaTypeAudioBook' value='4'/>
+<enum name='MPMediaTypeMusic' value='1'/>
+<enum name='MPMediaTypePodcast' value='2'/>
+<enum name='MPMovieControlModeDefault' value='0'/>
+<enum name='MPMovieControlModeHidden' value='2'/>
+<enum name='MPMovieControlModeVolumeOnly' value='1'/>
+<enum name='MPMovieControlStyleDefault' value='1'/>
+<enum name='MPMovieControlStyleEmbedded' value='1'/>
+<enum name='MPMovieControlStyleFullscreen' value='2'/>
+<enum name='MPMovieControlStyleNone' value='0'/>
+<enum name='MPMovieFinishReasonPlaybackEnded' value='0'/>
+<enum name='MPMovieFinishReasonPlaybackError' value='1'/>
+<enum name='MPMovieFinishReasonUserExited' value='2'/>
+<enum name='MPMovieLoadStatePlayable' value='1'/>
+<enum name='MPMovieLoadStatePlaythroughOK' value='2'/>
+<enum name='MPMovieLoadStateStalled' value='4'/>
+<enum name='MPMovieLoadStateUnknown' value='0'/>
+<enum name='MPMovieMediaTypeMaskAudio' value='2'/>
+<enum name='MPMovieMediaTypeMaskNone' value='0'/>
+<enum name='MPMovieMediaTypeMaskVideo' value='1'/>
+<enum name='MPMoviePlaybackStateInterrupted' value='3'/>
+<enum name='MPMoviePlaybackStatePaused' value='2'/>
+<enum name='MPMoviePlaybackStatePlaying' value='1'/>
+<enum name='MPMoviePlaybackStateSeekingBackward' value='5'/>
+<enum name='MPMoviePlaybackStateSeekingForward' value='4'/>
+<enum name='MPMoviePlaybackStateStopped' value='0'/>
+<enum name='MPMovieRepeatModeNone' value='0'/>
+<enum name='MPMovieRepeatModeOne' value='1'/>
+<enum name='MPMovieScalingModeAspectFill' value='2'/>
+<enum name='MPMovieScalingModeAspectFit' value='1'/>
+<enum name='MPMovieScalingModeFill' value='3'/>
+<enum name='MPMovieScalingModeNone' value='0'/>
+<enum name='MPMovieSourceTypeFile' value='1'/>
+<enum name='MPMovieSourceTypeStreaming' value='2'/>
+<enum name='MPMovieSourceTypeUnknown' value='0'/>
+<enum name='MPMovieTimeOptionExact' value='1'/>
+<enum name='MPMovieTimeOptionNearestKeyFrame' value='0'/>
+<enum name='MPMusicPlaybackStateInterrupted' value='3'/>
+<enum name='MPMusicPlaybackStatePaused' value='2'/>
+<enum name='MPMusicPlaybackStatePlaying' value='1'/>
+<enum name='MPMusicPlaybackStateSeekingBackward' value='5'/>
+<enum name='MPMusicPlaybackStateSeekingForward' value='4'/>
+<enum name='MPMusicPlaybackStateStopped' value='0'/>
+<enum name='MPMusicRepeatModeAll' value='3'/>
+<enum name='MPMusicRepeatModeDefault' value='0'/>
+<enum name='MPMusicRepeatModeNone' value='1'/>
+<enum name='MPMusicRepeatModeOne' value='2'/>
+<enum name='MPMusicShuffleModeAlbums' value='3'/>
+<enum name='MPMusicShuffleModeDefault' value='0'/>
+<enum name='MPMusicShuffleModeOff' value='1'/>
+<enum name='MPMusicShuffleModeSongs' value='2'/>
+<function name='MPVolumeSettingsAlertHide'/>
+<function name='MPVolumeSettingsAlertIsVisible'>
+<retval type='B'/>
+</function>
+<function name='MPVolumeSettingsAlertShow'/>
+<class name='MPMediaEntity'>
+<method selector='canFilterByProperty:' class_method='true'>
+<retval type='B'/>
+</method>
+</class>
+<class name='MPMediaPickerController'>
+<method selector='allowsPickingMultipleItems'>
+<retval type='B'/>
+</method>
+<method selector='setAllowsPickingMultipleItems:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='MPMoviePlayerController'>
+<method selector='allowsAirPlay'>
+<retval type='B'/>
+</method>
+<method selector='isFullscreen'>
+<retval type='B'/>
+</method>
+<method selector='setAllowsAirPlay:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setFullscreen:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setFullscreen:animated:'>
+<arg type='B' index='0'/>
+<arg type='B' index='1'/>
+</method>
+<method selector='setShouldAutoplay:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setUseApplicationAudioSession:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='shouldAutoplay'>
+<retval type='B'/>
+</method>
+<method selector='useApplicationAudioSession'>
+<retval type='B'/>
+</method>
+</class>
+<class name='MPMoviePlayerViewController'>
+<method selector='shouldAutorotateToInterfaceOrientation:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='MPVolumeView'>
+<method selector='setShowsRouteButton:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setShowsVolumeSlider:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='showsRouteButton'>
+<retval type='B'/>
+</method>
+<method selector='showsVolumeSlider'>
+<retval type='B'/>
+</method>
+</class>
+<class name='NSObject'>
+<method selector='isPreparedToPlay'>
+<retval type='B'/>
+</method>
+</class>
+<informal_protocol name='MPMediaPickerControllerDelegate'>
+<method type='v16@0:4@8@12' selector='mediaPicker:didPickMediaItems:'/>
+<method type='v12@0:4@8' selector='mediaPickerDidCancel:'/>
+</informal_protocol>
+<informal_protocol name='MPMediaPlayback'>
+<method type='v8@0:4' selector='beginSeekingBackward'/>
+<method type='v8@0:4' selector='beginSeekingForward'/>
+<method type='f8@0:4' selector='currentPlaybackRate'/>
+<method type='d8@0:4' selector='currentPlaybackTime'/>
+<method type='v8@0:4' selector='endSeeking'/>
+<method type='B8@0:4' selector='isPreparedToPlay'/>
+<method type='v8@0:4' selector='pause'/>
+<method type='v8@0:4' selector='play'/>
+<method type='v8@0:4' selector='prepareToPlay'/>
+<method type='v12@0:4f8' selector='setCurrentPlaybackRate:'/>
+<method type='v16@0:4d8' selector='setCurrentPlaybackTime:'/>
+<method type='v8@0:4' selector='stop'/>
+</informal_protocol>
+</signatures>

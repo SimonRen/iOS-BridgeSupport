@@ -1,0 +1,62 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<function name='ABCreateStringWithAddressDictionary'>
+<arg type='@'/>
+<arg type='B'/>
+<retval type='@'/>
+</function>
+<class name='ABPersonViewController'>
+<method selector='allowsEditing'>
+<retval type='B'/>
+</method>
+<method selector='setAllowsEditing:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setShouldShowLinkedPeople:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='shouldShowLinkedPeople'>
+<retval type='B'/>
+</method>
+</class>
+<class name='ABUnknownPersonViewController'>
+<method selector='allowsActions'>
+<retval type='B'/>
+</method>
+<method selector='allowsAddingToAddressBook'>
+<retval type='B'/>
+</method>
+<method selector='setAllowsActions:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setAllowsAddingToAddressBook:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='NSObject'>
+<method selector='peoplePickerNavigationController:shouldContinueAfterSelectingPerson:'>
+<retval type='B'/>
+</method>
+<method selector='peoplePickerNavigationController:shouldContinueAfterSelectingPerson:property:identifier:'>
+<retval type='B'/>
+</method>
+<method selector='personViewController:shouldPerformDefaultActionForPerson:property:identifier:'>
+<retval type='B'/>
+</method>
+</class>
+<informal_protocol name='ABNewPersonViewControllerDelegate'>
+<method type='v16@0:4@8^v12' selector='newPersonViewController:didCompleteWithNewPerson:'/>
+</informal_protocol>
+<informal_protocol name='ABPeoplePickerNavigationControllerDelegate'>
+<method type='B16@0:4@8^v12' selector='peoplePickerNavigationController:shouldContinueAfterSelectingPerson:'/>
+<method type='B24@0:4@8^v12i16i20' selector='peoplePickerNavigationController:shouldContinueAfterSelectingPerson:property:identifier:'/>
+<method type='v12@0:4@8' selector='peoplePickerNavigationControllerDidCancel:'/>
+</informal_protocol>
+<informal_protocol name='ABPersonViewControllerDelegate'>
+<method type='B24@0:4@8^v12i16i20' selector='personViewController:shouldPerformDefaultActionForPerson:property:identifier:'/>
+</informal_protocol>
+<informal_protocol name='ABUnknownPersonViewControllerDelegate'>
+<method type='v16@0:4@8^v12' selector='unknownPersonViewController:didResolveToPerson:'/>
+</informal_protocol>
+</signatures>

@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<enum name='EKEventEditViewActionCanceled' value='0'/>
+<enum name='EKEventEditViewActionCancelled' value='0'/>
+<enum name='EKEventEditViewActionDeleted' value='2'/>
+<enum name='EKEventEditViewActionSaved' value='1'/>
+<enum name='EKEventViewActionDeleted' value='2'/>
+<enum name='EKEventViewActionDone' value='0'/>
+<enum name='EKEventViewActionResponded' value='1'/>
+<class name='EKEventViewController'>
+<method selector='allowsCalendarPreview'>
+<retval type='B'/>
+</method>
+<method selector='allowsEditing'>
+<retval type='B'/>
+</method>
+<method selector='setAllowsCalendarPreview:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setAllowsEditing:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<informal_protocol name='EKEventEditViewDelegate'>
+<method type='v16@0:4@8i12' selector='eventEditViewController:didCompleteWithAction:'/>
+<method type='@12@0:4@8' selector='eventEditViewControllerDefaultCalendarForNewEvents:'/>
+</informal_protocol>
+</signatures>

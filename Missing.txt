@@ -1,0 +1,11 @@
+AudioUnit.framework
+CFNetwork.framework
+CoreFoundation.framework
+CoreGraphics.framework
+CoreMedia.framework
+CoreText.framework
+CoreVideo.framework
+IOKit.framework
+ImageIO.framework
+Security.framework
+SystemConfiguration.framework

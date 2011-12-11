@@ -1,0 +1,2031 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<depends_on path='/System/Library/Frameworks/IOKit.framework'/>
+<depends_on path='/System/Library/Frameworks/IOKit.framework'/>
+<struct name='UIEdgeInsets' type='{UIEdgeInsets=&quot;top&quot;f&quot;left&quot;f&quot;bottom&quot;f&quot;right&quot;f}'/>
+<constant name='UIAccessibilityLayoutChangedNotification' type='I'/>
+<constant name='UIAccessibilityScreenChangedNotification' type='I'/>
+<constant name='UIAccessibilityTraitButton' type='Q'/>
+<constant name='UIAccessibilityTraitImage' type='Q'/>
+<constant name='UIAccessibilityTraitKeyboardKey' type='Q'/>
+<constant name='UIAccessibilityTraitLink' type='Q'/>
+<constant name='UIAccessibilityTraitNone' type='Q'/>
+<constant name='UIAccessibilityTraitNotEnabled' type='Q'/>
+<constant name='UIAccessibilityTraitPlaysSound' type='Q'/>
+<constant name='UIAccessibilityTraitSearchField' type='Q'/>
+<constant name='UIAccessibilityTraitSelected' type='Q'/>
+<constant name='UIAccessibilityTraitStaticText' type='Q'/>
+<constant name='UIAccessibilityTraitSummaryElement' type='Q'/>
+<constant name='UIAccessibilityTraitUpdatesFrequently' type='Q'/>
+<constant name='UIApplicationDidBecomeActiveNotification' type='@'/>
+<constant name='UIApplicationDidChangeStatusBarFrameNotification' type='@'/>
+<constant name='UIApplicationDidChangeStatusBarOrientationNotification' type='@'/>
+<constant name='UIApplicationDidFinishLaunchingNotification' type='@'/>
+<constant name='UIApplicationDidReceiveMemoryWarningNotification' type='@'/>
+<constant name='UIApplicationSignificantTimeChangeNotification' type='@'/>
+<constant name='UIApplicationStatusBarFrameUserInfoKey' type='@'/>
+<constant name='UIApplicationStatusBarOrientationUserInfoKey' type='@'/>
+<constant name='UIApplicationWillChangeStatusBarFrameNotification' type='@'/>
+<constant name='UIApplicationWillChangeStatusBarOrientationNotification' type='@'/>
+<constant name='UIApplicationWillResignActiveNotification' type='@'/>
+<constant name='UIApplicationWillTerminateNotification' type='@'/>
+<constant name='UIDeviceOrientationDidChangeNotification' type='@'/>
+<constant name='UIEdgeInsetsZero' type='{UIEdgeInsets=ffff}'/>
+<constant name='UIImagePickerControllerCropRect' type='@'/>
+<constant name='UIImagePickerControllerEditedImage' type='@'/>
+<constant name='UIImagePickerControllerMediaType' type='@'/>
+<constant name='UIImagePickerControllerMediaURL' type='@'/>
+<constant name='UIImagePickerControllerOriginalImage' type='@'/>
+<constant name='UIKeyboardDidHideNotification' type='@'/>
+<constant name='UIKeyboardDidShowNotification' type='@'/>
+<constant name='UIKeyboardWillHideNotification' type='@'/>
+<constant name='UIKeyboardWillShowNotification' type='@'/>
+<constant name='UIMenuControllerDidHideMenuNotification' type='@'/>
+<constant name='UIMenuControllerDidShowMenuNotification' type='@'/>
+<constant name='UIMenuControllerMenuFrameDidChangeNotification' type='@'/>
+<constant name='UIMenuControllerWillHideMenuNotification' type='@'/>
+<constant name='UIMenuControllerWillShowMenuNotification' type='@'/>
+<constant name='UINavigationControllerHideShowBarDuration' type='f'/>
+<constant name='UIPasteboardChangedNotification' type='@'/>
+<constant name='UIPasteboardChangedTypesAddedKey' type='@'/>
+<constant name='UIPasteboardChangedTypesRemovedKey' type='@'/>
+<constant name='UIPasteboardNameFind' type='@'/>
+<constant name='UIPasteboardNameGeneral' type='@'/>
+<constant name='UIPasteboardRemovedNotification' type='@'/>
+<constant name='UIPasteboardTypeListColor' type='@'/>
+<constant name='UIPasteboardTypeListImage' type='@'/>
+<constant name='UIPasteboardTypeListString' type='@'/>
+<constant name='UIPasteboardTypeListURL' type='@'/>
+<constant name='UIPrintErrorDomain' type='@'/>
+<constant name='UITableViewSelectionDidChangeNotification' type='@'/>
+<constant name='UITextFieldTextDidBeginEditingNotification' type='@'/>
+<constant name='UITextFieldTextDidChangeNotification' type='@'/>
+<constant name='UITextFieldTextDidEndEditingNotification' type='@'/>
+<constant name='UITextInputTextBackgroundColorKey' type='@'/>
+<constant name='UITextInputTextColorKey' type='@'/>
+<constant name='UITextInputTextFontKey' type='@'/>
+<constant name='UITextViewTextDidBeginEditingNotification' type='@'/>
+<constant name='UITextViewTextDidChangeNotification' type='@'/>
+<constant name='UITextViewTextDidEndEditingNotification' type='@'/>
+<constant name='UITrackingRunLoopMode' type='@'/>
+<constant name='UIWindowDidBecomeHiddenNotification' type='@'/>
+<constant name='UIWindowDidBecomeKeyNotification' type='@'/>
+<constant name='UIWindowDidBecomeVisibleNotification' type='@'/>
+<constant name='UIWindowDidResignKeyNotification' type='@'/>
+<constant name='UIWindowLevelAlert' type='f'/>
+<constant name='UIWindowLevelNormal' type='f'/>
+<constant name='UIWindowLevelStatusBar' type='f'/>
+<enum name='UIAccessibilityScrollDirectionDown' value='4'/>
+<enum name='UIAccessibilityScrollDirectionLeft' value='2'/>
+<enum name='UIAccessibilityScrollDirectionRight' value='1'/>
+<enum name='UIAccessibilityScrollDirectionUp' value='3'/>
+<enum name='UIActionSheetStyleAutomatic' value='-1'/>
+<enum name='UIActionSheetStyleBlackOpaque' value='1'/>
+<enum name='UIActionSheetStyleBlackTranslucent' value='2'/>
+<enum name='UIActionSheetStyleDefault' value='0'/>
+<enum name='UIActivityIndicatorViewStyleGray' value='2'/>
+<enum name='UIActivityIndicatorViewStyleWhite' value='1'/>
+<enum name='UIActivityIndicatorViewStyleWhiteLarge' value='0'/>
+<enum name='UIBarButtonItemStyleBordered' value='1'/>
+<enum name='UIBarButtonItemStyleDone' value='2'/>
+<enum name='UIBarButtonItemStylePlain' value='0'/>
+<enum name='UIBarButtonSystemItemAction' value='9'/>
+<enum name='UIBarButtonSystemItemAdd' value='4'/>
+<enum name='UIBarButtonSystemItemBookmarks' value='11'/>
+<enum name='UIBarButtonSystemItemCamera' value='15'/>
+<enum name='UIBarButtonSystemItemCancel' value='1'/>
+<enum name='UIBarButtonSystemItemCompose' value='7'/>
+<enum name='UIBarButtonSystemItemDone' value='0'/>
+<enum name='UIBarButtonSystemItemEdit' value='2'/>
+<enum name='UIBarButtonSystemItemFastForward' value='20'/>
+<enum name='UIBarButtonSystemItemFixedSpace' value='6'/>
+<enum name='UIBarButtonSystemItemFlexibleSpace' value='5'/>
+<enum name='UIBarButtonSystemItemOrganize' value='10'/>
+<enum name='UIBarButtonSystemItemPause' value='18'/>
+<enum name='UIBarButtonSystemItemPlay' value='17'/>
+<enum name='UIBarButtonSystemItemRefresh' value='13'/>
+<enum name='UIBarButtonSystemItemReply' value='8'/>
+<enum name='UIBarButtonSystemItemRewind' value='19'/>
+<enum name='UIBarButtonSystemItemSave' value='3'/>
+<enum name='UIBarButtonSystemItemSearch' value='12'/>
+<enum name='UIBarButtonSystemItemStop' value='14'/>
+<enum name='UIBarButtonSystemItemTrash' value='16'/>
+<enum name='UIBarStyleBlack' value='1'/>
+<enum name='UIBarStyleBlackOpaque' value='1'/>
+<enum name='UIBarStyleBlackTranslucent' value='2'/>
+<enum name='UIBarStyleDefault' value='0'/>
+<enum name='UIBaselineAdjustmentAlignBaselines' value='0'/>
+<enum name='UIBaselineAdjustmentAlignCenters' value='1'/>
+<enum name='UIBaselineAdjustmentNone' value='2'/>
+<enum name='UIButtonTypeContactAdd' value='5'/>
+<enum name='UIButtonTypeCustom' value='0'/>
+<enum name='UIButtonTypeDetailDisclosure' value='2'/>
+<enum name='UIButtonTypeInfoDark' value='4'/>
+<enum name='UIButtonTypeInfoLight' value='3'/>
+<enum name='UIButtonTypeRoundedRect' value='1'/>
+<enum name='UIControlContentHorizontalAlignmentCenter' value='0'/>
+<enum name='UIControlContentHorizontalAlignmentFill' value='3'/>
+<enum name='UIControlContentHorizontalAlignmentLeft' value='1'/>
+<enum name='UIControlContentHorizontalAlignmentRight' value='2'/>
+<enum name='UIControlContentVerticalAlignmentBottom' value='2'/>
+<enum name='UIControlContentVerticalAlignmentCenter' value='0'/>
+<enum name='UIControlContentVerticalAlignmentFill' value='3'/>
+<enum name='UIControlContentVerticalAlignmentTop' value='1'/>
+<enum name='UIControlEventAllEditingEvents' value='983040'/>
+<enum name='UIControlEventAllEvents' value='4294967295'/>
+<enum name='UIControlEventAllTouchEvents' value='4095'/>
+<enum name='UIControlEventApplicationReserved' value='251658240'/>
+<enum name='UIControlEventEditingChanged' value='131072'/>
+<enum name='UIControlEventEditingDidBegin' value='65536'/>
+<enum name='UIControlEventEditingDidEnd' value='262144'/>
+<enum name='UIControlEventEditingDidEndOnExit' value='524288'/>
+<enum name='UIControlEventSystemReserved' value='4026531840'/>
+<enum name='UIControlEventTouchCancel' value='256'/>
+<enum name='UIControlEventTouchDown' value='1'/>
+<enum name='UIControlEventTouchDownRepeat' value='2'/>
+<enum name='UIControlEventTouchDragEnter' value='16'/>
+<enum name='UIControlEventTouchDragExit' value='32'/>
+<enum name='UIControlEventTouchDragInside' value='4'/>
+<enum name='UIControlEventTouchDragOutside' value='8'/>
+<enum name='UIControlEventTouchUpInside' value='64'/>
+<enum name='UIControlEventTouchUpOutside' value='128'/>
+<enum name='UIControlEventValueChanged' value='4096'/>
+<enum name='UIControlStateApplication' value='16711680'/>
+<enum name='UIControlStateDisabled' value='2'/>
+<enum name='UIControlStateHighlighted' value='1'/>
+<enum name='UIControlStateNormal' value='0'/>
+<enum name='UIControlStateReserved' value='4278190080'/>
+<enum name='UIControlStateSelected' value='4'/>
+<enum name='UIDataDetectorTypeAll' value='4294967295'/>
+<enum name='UIDataDetectorTypeLink' value='2'/>
+<enum name='UIDataDetectorTypeNone' value='0'/>
+<enum name='UIDataDetectorTypePhoneNumber' value='1'/>
+<enum name='UIDatePickerModeCountDownTimer' value='3'/>
+<enum name='UIDatePickerModeDate' value='1'/>
+<enum name='UIDatePickerModeDateAndTime' value='2'/>
+<enum name='UIDatePickerModeTime' value='0'/>
+<enum name='UIDeviceBatteryStateCharging' value='2'/>
+<enum name='UIDeviceBatteryStateFull' value='3'/>
+<enum name='UIDeviceBatteryStateUnknown' value='0'/>
+<enum name='UIDeviceBatteryStateUnplugged' value='1'/>
+<enum name='UIDeviceOrientationFaceDown' value='6'/>
+<enum name='UIDeviceOrientationFaceUp' value='5'/>
+<enum name='UIDeviceOrientationLandscapeLeft' value='3'/>
+<enum name='UIDeviceOrientationLandscapeRight' value='4'/>
+<enum name='UIDeviceOrientationPortrait' value='1'/>
+<enum name='UIDeviceOrientationPortraitUpsideDown' value='2'/>
+<enum name='UIDeviceOrientationUnknown' value='0'/>
+<enum name='UIEventSubtypeMotionShake' value='1'/>
+<enum name='UIEventSubtypeNone' value='0'/>
+<enum name='UIEventSubtypeRemoteControlBeginSeekingBackward' value='106'/>
+<enum name='UIEventSubtypeRemoteControlBeginSeekingForward' value='108'/>
+<enum name='UIEventSubtypeRemoteControlEndSeekingBackward' value='107'/>
+<enum name='UIEventSubtypeRemoteControlEndSeekingForward' value='109'/>
+<enum name='UIEventSubtypeRemoteControlNextTrack' value='104'/>
+<enum name='UIEventSubtypeRemoteControlPause' value='101'/>
+<enum name='UIEventSubtypeRemoteControlPlay' value='100'/>
+<enum name='UIEventSubtypeRemoteControlPreviousTrack' value='105'/>
+<enum name='UIEventSubtypeRemoteControlStop' value='102'/>
+<enum name='UIEventSubtypeRemoteControlTogglePlayPause' value='103'/>
+<enum name='UIEventTypeMotion' value='1'/>
+<enum name='UIEventTypeRemoteControl' value='2'/>
+<enum name='UIEventTypeTouches' value='0'/>
+<enum name='UIGestureRecognizerStateBegan' value='1'/>
+<enum name='UIGestureRecognizerStateCancelled' value='4'/>
+<enum name='UIGestureRecognizerStateChanged' value='2'/>
+<enum name='UIGestureRecognizerStateEnded' value='3'/>
+<enum name='UIGestureRecognizerStateFailed' value='5'/>
+<enum name='UIGestureRecognizerStatePossible' value='0'/>
+<enum name='UIGestureRecognizerStateRecognized' value='3'/>
+<enum name='UIImageOrientationDown' value='1'/>
+<enum name='UIImageOrientationDownMirrored' value='5'/>
+<enum name='UIImageOrientationLeft' value='2'/>
+<enum name='UIImageOrientationLeftMirrored' value='6'/>
+<enum name='UIImageOrientationRight' value='3'/>
+<enum name='UIImageOrientationRightMirrored' value='7'/>
+<enum name='UIImageOrientationUp' value='0'/>
+<enum name='UIImageOrientationUpMirrored' value='4'/>
+<enum name='UIImagePickerControllerCameraCaptureModePhoto' value='0'/>
+<enum name='UIImagePickerControllerCameraCaptureModeVideo' value='1'/>
+<enum name='UIImagePickerControllerCameraDeviceFront' value='1'/>
+<enum name='UIImagePickerControllerCameraDeviceRear' value='0'/>
+<enum name='UIImagePickerControllerCameraFlashModeAuto' value='0'/>
+<enum name='UIImagePickerControllerCameraFlashModeOff' value='-1'/>
+<enum name='UIImagePickerControllerCameraFlashModeOn' value='1'/>
+<enum name='UIImagePickerControllerQualityType640x480' value='3'/>
+<enum name='UIImagePickerControllerQualityTypeHigh' value='0'/>
+<enum name='UIImagePickerControllerQualityTypeLow' value='2'/>
+<enum name='UIImagePickerControllerQualityTypeMedium' value='1'/>
+<enum name='UIImagePickerControllerSourceTypeCamera' value='1'/>
+<enum name='UIImagePickerControllerSourceTypePhotoLibrary' value='0'/>
+<enum name='UIImagePickerControllerSourceTypeSavedPhotosAlbum' value='2'/>
+<enum name='UIInterfaceOrientationLandscapeLeft' value='4'/>
+<enum name='UIInterfaceOrientationLandscapeRight' value='3'/>
+<enum name='UIInterfaceOrientationPortrait' value='1'/>
+<enum name='UIInterfaceOrientationPortraitUpsideDown' value='2'/>
+<enum name='UIKeyboardAppearanceAlert' value='1'/>
+<enum name='UIKeyboardAppearanceDefault' value='0'/>
+<enum name='UIKeyboardTypeASCIICapable' value='1'/>
+<enum name='UIKeyboardTypeAlphabet' value='1'/>
+<enum name='UIKeyboardTypeDefault' value='0'/>
+<enum name='UIKeyboardTypeEmailAddress' value='7'/>
+<enum name='UIKeyboardTypeNamePhonePad' value='6'/>
+<enum name='UIKeyboardTypeNumberPad' value='4'/>
+<enum name='UIKeyboardTypeNumbersAndPunctuation' value='2'/>
+<enum name='UIKeyboardTypePhonePad' value='5'/>
+<enum name='UIKeyboardTypeURL' value='3'/>
+<enum name='UILineBreakModeCharacterWrap' value='1'/>
+<enum name='UILineBreakModeClip' value='2'/>
+<enum name='UILineBreakModeHeadTruncation' value='3'/>
+<enum name='UILineBreakModeMiddleTruncation' value='5'/>
+<enum name='UILineBreakModeTailTruncation' value='4'/>
+<enum name='UILineBreakModeWordWrap' value='0'/>
+<enum name='UIMenuControllerArrowDefault' value='0'/>
+<enum name='UIModalPresentationFullScreen' value='0'/>
+<enum name='UIModalTransitionStyleCoverVertical' value='0'/>
+<enum name='UIModalTransitionStyleCrossDissolve' value='2'/>
+<enum name='UIModalTransitionStyleFlipHorizontal' value='1'/>
+<enum name='UIPopoverArrowDirectionAny' value='15'/>
+<enum name='UIPopoverArrowDirectionDown' value='2'/>
+<enum name='UIPopoverArrowDirectionLeft' value='4'/>
+<enum name='UIPopoverArrowDirectionRight' value='8'/>
+<enum name='UIPopoverArrowDirectionUnknown' value='4294967295'/>
+<enum name='UIPopoverArrowDirectionUp' value='1'/>
+<enum name='UIPrintInfoDuplexLongEdge' value='1'/>
+<enum name='UIPrintInfoDuplexNone' value='0'/>
+<enum name='UIPrintInfoDuplexShortEdge' value='2'/>
+<enum name='UIPrintInfoOrientationLandscape' value='1'/>
+<enum name='UIPrintInfoOrientationPortrait' value='0'/>
+<enum name='UIPrintInfoOutputGeneral' value='0'/>
+<enum name='UIPrintInfoOutputGrayscale' value='2'/>
+<enum name='UIPrintInfoOutputPhoto' value='1'/>
+<enum name='UIPrintJobFailedError' value='4'/>
+<enum name='UIPrintNoContentError' value='2'/>
+<enum name='UIPrintUnknownImageFormatError' value='3'/>
+<enum name='UIPrintingNotAvailableError' value='1'/>
+<enum name='UIProgressViewStyleBar' value='1'/>
+<enum name='UIProgressViewStyleDefault' value='0'/>
+<enum name='UIRectCornerAllCorners' value='-1'/>
+<enum name='UIRectCornerBottomLeft' value='4'/>
+<enum name='UIRectCornerBottomRight' value='8'/>
+<enum name='UIRectCornerTopLeft' value='1'/>
+<enum name='UIRectCornerTopRight' value='2'/>
+<enum name='UIReturnKeyDefault' value='0'/>
+<enum name='UIReturnKeyDone' value='9'/>
+<enum name='UIReturnKeyEmergencyCall' value='10'/>
+<enum name='UIReturnKeyGo' value='1'/>
+<enum name='UIReturnKeyGoogle' value='2'/>
+<enum name='UIReturnKeyJoin' value='3'/>
+<enum name='UIReturnKeyNext' value='4'/>
+<enum name='UIReturnKeyRoute' value='5'/>
+<enum name='UIReturnKeySearch' value='6'/>
+<enum name='UIReturnKeySend' value='7'/>
+<enum name='UIReturnKeyYahoo' value='8'/>
+<enum name='UIScrollViewIndicatorStyleBlack' value='1'/>
+<enum name='UIScrollViewIndicatorStyleDefault' value='0'/>
+<enum name='UIScrollViewIndicatorStyleWhite' value='2'/>
+<enum name='UISegmentedControlNoSegment' value='-1'/>
+<enum name='UISegmentedControlStyleBar' value='2'/>
+<enum name='UISegmentedControlStyleBezeled' value='3'/>
+<enum name='UISegmentedControlStyleBordered' value='1'/>
+<enum name='UISegmentedControlStylePlain' value='0'/>
+<enum name='UIStatusBarAnimationNone' value='0'/>
+<enum name='UIStatusBarStyleBlackOpaque' value='2'/>
+<enum name='UIStatusBarStyleBlackTranslucent' value='1'/>
+<enum name='UIStatusBarStyleDefault' value='0'/>
+<enum name='UISwipeGestureRecognizerDirectionDown' value='8'/>
+<enum name='UISwipeGestureRecognizerDirectionLeft' value='2'/>
+<enum name='UISwipeGestureRecognizerDirectionRight' value='1'/>
+<enum name='UISwipeGestureRecognizerDirectionUp' value='4'/>
+<enum name='UITabBarSystemItemBookmarks' value='7'/>
+<enum name='UITabBarSystemItemContacts' value='5'/>
+<enum name='UITabBarSystemItemDownloads' value='9'/>
+<enum name='UITabBarSystemItemFavorites' value='1'/>
+<enum name='UITabBarSystemItemFeatured' value='2'/>
+<enum name='UITabBarSystemItemHistory' value='6'/>
+<enum name='UITabBarSystemItemMore' value='0'/>
+<enum name='UITabBarSystemItemMostRecent' value='10'/>
+<enum name='UITabBarSystemItemMostViewed' value='11'/>
+<enum name='UITabBarSystemItemRecents' value='4'/>
+<enum name='UITabBarSystemItemSearch' value='8'/>
+<enum name='UITabBarSystemItemTopRated' value='3'/>
+<enum name='UITableViewCellAccessoryCheckmark' value='3'/>
+<enum name='UITableViewCellAccessoryDetailDisclosureButton' value='2'/>
+<enum name='UITableViewCellAccessoryDisclosureIndicator' value='1'/>
+<enum name='UITableViewCellAccessoryNone' value='0'/>
+<enum name='UITableViewCellEditingStyleDelete' value='1'/>
+<enum name='UITableViewCellEditingStyleInsert' value='2'/>
+<enum name='UITableViewCellEditingStyleNone' value='0'/>
+<enum name='UITableViewCellSelectionStyleBlue' value='1'/>
+<enum name='UITableViewCellSelectionStyleGray' value='2'/>
+<enum name='UITableViewCellSelectionStyleNone' value='0'/>
+<enum name='UITableViewCellSeparatorStyleNone' value='0'/>
+<enum name='UITableViewCellSeparatorStyleSingleLine' value='1'/>
+<enum name='UITableViewCellSeparatorStyleSingleLineEtched' value='2'/>
+<enum name='UITableViewCellStateDefaultMask' value='0'/>
+<enum name='UITableViewCellStateEditingMask' value='1'/>
+<enum name='UITableViewCellStateShowingDeleteConfirmationMask' value='2'/>
+<enum name='UITableViewCellStateShowingEditControlMask' value='1'/>
+<enum name='UITableViewCellStyleDefault' value='0'/>
+<enum name='UITableViewCellStyleSubtitle' value='3'/>
+<enum name='UITableViewCellStyleValue1' value='1'/>
+<enum name='UITableViewCellStyleValue2' value='2'/>
+<enum name='UITableViewRowAnimationBottom' value='4'/>
+<enum name='UITableViewRowAnimationFade' value='0'/>
+<enum name='UITableViewRowAnimationLeft' value='2'/>
+<enum name='UITableViewRowAnimationMiddle' value='6'/>
+<enum name='UITableViewRowAnimationNone' value='5'/>
+<enum name='UITableViewRowAnimationRight' value='1'/>
+<enum name='UITableViewRowAnimationTop' value='3'/>
+<enum name='UITableViewScrollPositionBottom' value='3'/>
+<enum name='UITableViewScrollPositionMiddle' value='2'/>
+<enum name='UITableViewScrollPositionNone' value='0'/>
+<enum name='UITableViewScrollPositionTop' value='1'/>
+<enum name='UITableViewStyleGrouped' value='1'/>
+<enum name='UITableViewStylePlain' value='0'/>
+<enum name='UITextAlignmentCenter' value='1'/>
+<enum name='UITextAlignmentLeft' value='0'/>
+<enum name='UITextAlignmentRight' value='2'/>
+<enum name='UITextAutocapitalizationTypeAllCharacters' value='3'/>
+<enum name='UITextAutocapitalizationTypeNone' value='0'/>
+<enum name='UITextAutocapitalizationTypeSentences' value='2'/>
+<enum name='UITextAutocapitalizationTypeWords' value='1'/>
+<enum name='UITextAutocorrectionTypeDefault' value='0'/>
+<enum name='UITextAutocorrectionTypeNo' value='1'/>
+<enum name='UITextAutocorrectionTypeYes' value='2'/>
+<enum name='UITextBorderStyleBezel' value='2'/>
+<enum name='UITextBorderStyleLine' value='1'/>
+<enum name='UITextBorderStyleNone' value='0'/>
+<enum name='UITextBorderStyleRoundedRect' value='3'/>
+<enum name='UITextFieldViewModeAlways' value='3'/>
+<enum name='UITextFieldViewModeNever' value='0'/>
+<enum name='UITextFieldViewModeUnlessEditing' value='2'/>
+<enum name='UITextFieldViewModeWhileEditing' value='1'/>
+<enum name='UITextGranularityCharacter' value='0'/>
+<enum name='UITextGranularityDocument' value='5'/>
+<enum name='UITextGranularityLine' value='4'/>
+<enum name='UITextGranularityParagraph' value='3'/>
+<enum name='UITextGranularitySentence' value='2'/>
+<enum name='UITextGranularityWord' value='1'/>
+<enum name='UITextLayoutDirectionDown' value='5'/>
+<enum name='UITextLayoutDirectionLeft' value='3'/>
+<enum name='UITextLayoutDirectionRight' value='2'/>
+<enum name='UITextLayoutDirectionUp' value='4'/>
+<enum name='UITextStorageDirectionBackward' value='1'/>
+<enum name='UITextStorageDirectionForward' value='0'/>
+<enum name='UITextWritingDirectionLeftToRight' value='0'/>
+<enum name='UITextWritingDirectionNatural' value='-1'/>
+<enum name='UITextWritingDirectionRightToLeft' value='1'/>
+<enum name='UITouchPhaseBegan' value='0'/>
+<enum name='UITouchPhaseCancelled' value='4'/>
+<enum name='UITouchPhaseEnded' value='3'/>
+<enum name='UITouchPhaseMoved' value='1'/>
+<enum name='UITouchPhaseStationary' value='2'/>
+<enum name='UIViewAnimationCurveEaseIn' value='1'/>
+<enum name='UIViewAnimationCurveEaseInOut' value='0'/>
+<enum name='UIViewAnimationCurveEaseOut' value='2'/>
+<enum name='UIViewAnimationCurveLinear' value='3'/>
+<enum name='UIViewAnimationTransitionCurlDown' value='4'/>
+<enum name='UIViewAnimationTransitionCurlUp' value='3'/>
+<enum name='UIViewAnimationTransitionFlipFromLeft' value='1'/>
+<enum name='UIViewAnimationTransitionFlipFromRight' value='2'/>
+<enum name='UIViewAnimationTransitionNone' value='0'/>
+<enum name='UIViewAutoresizingFlexibleBottomMargin' value='32'/>
+<enum name='UIViewAutoresizingFlexibleHeight' value='16'/>
+<enum name='UIViewAutoresizingFlexibleLeftMargin' value='1'/>
+<enum name='UIViewAutoresizingFlexibleRightMargin' value='4'/>
+<enum name='UIViewAutoresizingFlexibleTopMargin' value='8'/>
+<enum name='UIViewAutoresizingFlexibleWidth' value='2'/>
+<enum name='UIViewAutoresizingNone' value='0'/>
+<enum name='UIViewContentModeBottom' value='6'/>
+<enum name='UIViewContentModeBottomLeft' value='11'/>
+<enum name='UIViewContentModeBottomRight' value='12'/>
+<enum name='UIViewContentModeCenter' value='4'/>
+<enum name='UIViewContentModeLeft' value='7'/>
+<enum name='UIViewContentModeRedraw' value='3'/>
+<enum name='UIViewContentModeRight' value='8'/>
+<enum name='UIViewContentModeScaleAspectFill' value='2'/>
+<enum name='UIViewContentModeScaleAspectFit' value='1'/>
+<enum name='UIViewContentModeScaleToFill' value='0'/>
+<enum name='UIViewContentModeTop' value='5'/>
+<enum name='UIViewContentModeTopLeft' value='9'/>
+<enum name='UIViewContentModeTopRight' value='10'/>
+<enum name='UIWebViewNavigationTypeBackForward' value='2'/>
+<enum name='UIWebViewNavigationTypeFormResubmitted' value='4'/>
+<enum name='UIWebViewNavigationTypeFormSubmitted' value='1'/>
+<enum name='UIWebViewNavigationTypeLinkClicked' value='0'/>
+<enum name='UIWebViewNavigationTypeOther' value='5'/>
+<enum name='UIWebViewNavigationTypeReload' value='3'/>
+<function name='CGAffineTransformFromString'>
+<arg type='@'/>
+<retval type='{CGAffineTransform=ffffff}'/>
+</function>
+<function name='CGPointFromString'>
+<arg type='@'/>
+<retval type='{CGPoint=ff}'/>
+</function>
+<function name='CGRectFromString'>
+<arg type='@'/>
+<retval type='{CGRect={CGPoint=ff}{CGSize=ff}}'/>
+</function>
+<function name='CGSizeFromString'>
+<arg type='@'/>
+<retval type='{CGSize=ff}'/>
+</function>
+<function name='NSStringFromCGAffineTransform'>
+<arg type='{CGAffineTransform=ffffff}'/>
+<retval type='@'/>
+</function>
+<function name='NSStringFromCGPoint'>
+<arg type='{CGPoint=ff}'/>
+<retval type='@'/>
+</function>
+<function name='NSStringFromCGRect'>
+<arg type='{CGRect={CGPoint=ff}{CGSize=ff}}'/>
+<retval type='@'/>
+</function>
+<function name='NSStringFromCGSize'>
+<arg type='{CGSize=ff}'/>
+<retval type='@'/>
+</function>
+<function name='NSStringFromUIEdgeInsets'>
+<arg type='{UIEdgeInsets=ffff}'/>
+<retval type='@'/>
+</function>
+<function name='UIAccessibilityPostNotification'>
+<arg type='I'/>
+<arg type='@'/>
+</function>
+<function name='UIApplicationMain'>
+<arg type='i'/>
+<arg type='^*'/>
+<arg type='@'/>
+<arg type='@'/>
+<retval type='i'/>
+</function>
+<function name='UIEdgeInsetsEqualToEdgeInsets' inline='true'>
+<arg type='{UIEdgeInsets=ffff}'/>
+<arg type='{UIEdgeInsets=ffff}'/>
+<retval type='B'/>
+</function>
+<function name='UIEdgeInsetsFromString'>
+<arg type='@'/>
+<retval type='{UIEdgeInsets=ffff}'/>
+</function>
+<function name='UIEdgeInsetsInsetRect' inline='true'>
+<arg type='{CGRect={CGPoint=ff}{CGSize=ff}}'/>
+<arg type='{UIEdgeInsets=ffff}'/>
+<retval type='{CGRect={CGPoint=ff}{CGSize=ff}}'/>
+</function>
+<function name='UIEdgeInsetsMake' inline='true'>
+<arg type='f'/>
+<arg type='f'/>
+<arg type='f'/>
+<arg type='f'/>
+<retval type='{UIEdgeInsets=ffff}'/>
+</function>
+<function name='UIGraphicsBeginImageContext'>
+<arg type='{CGSize=ff}'/>
+</function>
+<function name='UIGraphicsEndImageContext'/>
+<function name='UIGraphicsGetCurrentContext'>
+<retval type='^{CGContext=}'/>
+</function>
+<function name='UIGraphicsGetImageFromCurrentImageContext'>
+<retval type='@'/>
+</function>
+<function name='UIGraphicsPopContext'/>
+<function name='UIGraphicsPushContext'>
+<arg type='^{CGContext=}'/>
+</function>
+<function name='UIImageJPEGRepresentation'>
+<arg type='@'/>
+<arg type='f'/>
+<retval type='@'/>
+</function>
+<function name='UIImagePNGRepresentation'>
+<arg type='@'/>
+<retval type='@'/>
+</function>
+<function name='UIImageWriteToSavedPhotosAlbum'>
+<arg type='@'/>
+<arg type='@'/>
+<arg type=':'/>
+<arg type='^v'/>
+</function>
+<function name='UIRectClip'>
+<arg type='{CGRect={CGPoint=ff}{CGSize=ff}}'/>
+</function>
+<function name='UIRectFill'>
+<arg type='{CGRect={CGPoint=ff}{CGSize=ff}}'/>
+</function>
+<function name='UIRectFillUsingBlendMode'>
+<arg type='{CGRect={CGPoint=ff}{CGSize=ff}}'/>
+<arg type='i'/>
+</function>
+<function name='UIRectFrame'>
+<arg type='{CGRect={CGPoint=ff}{CGSize=ff}}'/>
+</function>
+<function name='UIRectFrameUsingBlendMode'>
+<arg type='{CGRect={CGPoint=ff}{CGSize=ff}}'/>
+<arg type='i'/>
+</function>
+<class name='NSObject'>
+<method selector='application:handleOpenURL:'>
+<retval type='B'/>
+</method>
+<method selector='documentInteractionController:canPerformAction:'>
+<retval type='B'/>
+</method>
+<method selector='documentInteractionController:performAction:'>
+<retval type='B'/>
+</method>
+<method selector='enableInputClicksWhenVisible'>
+<retval type='B'/>
+</method>
+<method selector='enablesReturnKeyAutomatically'>
+<retval type='B'/>
+</method>
+<method selector='gestureRecognizer:shouldReceiveTouch:'>
+<retval type='B'/>
+</method>
+<method selector='gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:'>
+<retval type='B'/>
+</method>
+<method selector='gestureRecognizerShouldBegin:'>
+<retval type='B'/>
+</method>
+<method selector='hasText'>
+<retval type='B'/>
+</method>
+<method selector='isAccessibilityElement'>
+<retval type='B'/>
+</method>
+<method selector='isPosition:atBoundary:inDirection:'>
+<retval type='B'/>
+</method>
+<method selector='isPosition:withinTextUnit:inDirection:'>
+<retval type='B'/>
+</method>
+<method selector='isSecureTextEntry'>
+<retval type='B'/>
+</method>
+<method selector='navigationBar:shouldPopItem:'>
+<retval type='B'/>
+</method>
+<method selector='navigationBar:shouldPushItem:'>
+<retval type='B'/>
+</method>
+<method selector='navigationController:didShowViewController:animated:'>
+<arg type='B' index='2'/>
+</method>
+<method selector='navigationController:willShowViewController:animated:'>
+<arg type='B' index='2'/>
+</method>
+<method selector='popoverControllerShouldDismissPopover:'>
+<retval type='B'/>
+</method>
+<method selector='scrollViewDidEndDragging:willDecelerate:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='scrollViewShouldScrollToTop:'>
+<retval type='B'/>
+</method>
+<method selector='searchBarShouldBeginEditing:'>
+<retval type='B'/>
+</method>
+<method selector='searchBarShouldEndEditing:'>
+<retval type='B'/>
+</method>
+<method selector='searchDisplayController:shouldReloadTableForSearchScope:'>
+<retval type='B'/>
+</method>
+<method selector='searchDisplayController:shouldReloadTableForSearchString:'>
+<retval type='B'/>
+</method>
+<method selector='setEnablesReturnKeyAutomatically:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setIsAccessibilityElement:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setSecureTextEntry:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='tabBar:didEndCustomizingItems:changed:'>
+<arg type='B' index='2'/>
+</method>
+<method selector='tabBar:willEndCustomizingItems:changed:'>
+<arg type='B' index='2'/>
+</method>
+<method selector='tabBarController:didEndCustomizingViewControllers:changed:'>
+<arg type='B' index='2'/>
+</method>
+<method selector='tableView:canEditRowAtIndexPath:'>
+<retval type='B'/>
+</method>
+<method selector='tableView:canMoveRowAtIndexPath:'>
+<retval type='B'/>
+</method>
+<method selector='tableView:shouldIndentWhileEditingRowAtIndexPath:'>
+<retval type='B'/>
+</method>
+<method selector='textField:shouldChangeCharactersInRange:replacementString:'>
+<retval type='B'/>
+</method>
+<method selector='textFieldShouldBeginEditing:'>
+<retval type='B'/>
+</method>
+<method selector='textFieldShouldClear:'>
+<retval type='B'/>
+</method>
+<method selector='textFieldShouldEndEditing:'>
+<retval type='B'/>
+</method>
+<method selector='textFieldShouldReturn:'>
+<retval type='B'/>
+</method>
+<method selector='textView:shouldChangeTextInRange:replacementText:'>
+<retval type='B'/>
+</method>
+<method selector='textViewShouldBeginEditing:'>
+<retval type='B'/>
+</method>
+<method selector='textViewShouldEndEditing:'>
+<retval type='B'/>
+</method>
+<method selector='webView:shouldStartLoadWithRequest:navigationType:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='UIAccessibilityElement'>
+<method selector='isAccessibilityElement'>
+<retval type='B'/>
+</method>
+<method selector='setIsAccessibilityElement:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='UIActionSheet'>
+<method selector='dismissWithClickedButtonIndex:animated:'>
+<arg type='B' index='1'/>
+</method>
+<method variadic='true' sentinel='0' selector='initWithTitle:delegate:cancelButtonTitle:destructiveButtonTitle:otherButtonTitles:'/>
+<method selector='isVisible'>
+<retval type='B'/>
+</method>
+</class>
+<class name='UIActivityIndicatorView'>
+<method selector='hidesWhenStopped'>
+<retval type='B'/>
+</method>
+<method selector='isAnimating'>
+<retval type='B'/>
+</method>
+<method selector='setHidesWhenStopped:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='UIAlertView'>
+<method selector='dismissWithClickedButtonIndex:animated:'>
+<arg type='B' index='1'/>
+</method>
+<method variadic='true' sentinel='0' selector='initWithTitle:message:delegate:cancelButtonTitle:otherButtonTitles:'/>
+<method selector='isVisible'>
+<retval type='B'/>
+</method>
+</class>
+<class name='UIApplication'>
+<method selector='applicationSupportsShakeToEdit'>
+<retval type='B'/>
+</method>
+<method selector='isIdleTimerDisabled'>
+<retval type='B'/>
+</method>
+<method selector='isIgnoringInteractionEvents'>
+<retval type='B'/>
+</method>
+<method selector='isNetworkActivityIndicatorVisible'>
+<retval type='B'/>
+</method>
+<method selector='isProtectedDataAvailable'>
+<retval type='B'/>
+</method>
+<method selector='isProximitySensingEnabled'>
+<retval type='B'/>
+</method>
+<method selector='isStatusBarHidden'>
+<retval type='B'/>
+</method>
+<method selector='openURL:'>
+<retval type='B'/>
+</method>
+<method selector='sendAction:to:from:forEvent:'>
+<retval type='B'/>
+</method>
+<method selector='setApplicationSupportsShakeToEdit:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setIdleTimerDisabled:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setNetworkActivityIndicatorVisible:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setProximitySensingEnabled:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setStatusBarHidden:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setStatusBarOrientation:animated:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='setStatusBarStyle:animated:'>
+<arg type='B' index='1'/>
+</method>
+</class>
+<class name='UIBarItem'>
+<method selector='isEnabled'>
+<retval type='B'/>
+</method>
+<method selector='setEnabled:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='UIBezierPath'>
+<method selector='bezierPathWithArcCenter:radius:startAngle:endAngle:clockwise:' class_method='true'>
+<arg type='B' index='4'/>
+</method>
+<method selector='containsPoint:'>
+<retval type='B'/>
+</method>
+<method selector='isEmpty'>
+<retval type='B'/>
+</method>
+<method selector='setUsesEvenOddFillRule:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='usesEvenOddFillRule'>
+<retval type='B'/>
+</method>
+</class>
+<class name='UIButton'>
+<method selector='adjustsImageWhenDisabled'>
+<retval type='B'/>
+</method>
+<method selector='adjustsImageWhenHighlighted'>
+<retval type='B'/>
+</method>
+<method selector='reversesTitleShadowWhenHighlighted'>
+<retval type='B'/>
+</method>
+<method selector='setAdjustsImageWhenDisabled:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setAdjustsImageWhenHighlighted:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setReversesTitleShadowWhenHighlighted:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setShowsTouchWhenHighlighted:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='showsTouchWhenHighlighted'>
+<retval type='B'/>
+</method>
+</class>
+<class name='UIControl'>
+<method selector='beginTrackingWithTouch:withEvent:'>
+<retval type='B'/>
+</method>
+<method selector='continueTrackingWithTouch:withEvent:'>
+<retval type='B'/>
+</method>
+<method selector='isEnabled'>
+<retval type='B'/>
+</method>
+<method selector='isHighlighted'>
+<retval type='B'/>
+</method>
+<method selector='isSelected'>
+<retval type='B'/>
+</method>
+<method selector='isTouchInside'>
+<retval type='B'/>
+</method>
+<method selector='isTracking'>
+<retval type='B'/>
+</method>
+<method selector='setEnabled:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setHighlighted:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setSelected:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='UIDatePicker'>
+<method selector='setDate:animated:'>
+<arg type='B' index='1'/>
+</method>
+</class>
+<class name='UIDevice'>
+<method selector='isBatteryMonitoringEnabled'>
+<retval type='B'/>
+</method>
+<method selector='isGeneratingDeviceOrientationNotifications'>
+<retval type='B'/>
+</method>
+<method selector='isMultitaskingSupported'>
+<retval type='B'/>
+</method>
+<method selector='isProximityMonitoringEnabled'>
+<retval type='B'/>
+</method>
+<method selector='proximityState'>
+<retval type='B'/>
+</method>
+<method selector='setBatteryMonitoringEnabled:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setProximityMonitoringEnabled:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='UIDocumentInteractionController'>
+<method selector='dismissMenuAnimated:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='dismissPreviewAnimated:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='presentOpenInMenuFromBarButtonItem:animated:'>
+<arg type='B' index='1'/>
+<retval type='B'/>
+</method>
+<method selector='presentOpenInMenuFromRect:inView:animated:'>
+<arg type='B' index='2'/>
+<retval type='B'/>
+</method>
+<method selector='presentOptionsMenuFromBarButtonItem:animated:'>
+<arg type='B' index='1'/>
+<retval type='B'/>
+</method>
+<method selector='presentOptionsMenuFromRect:inView:animated:'>
+<arg type='B' index='2'/>
+<retval type='B'/>
+</method>
+<method selector='presentPreviewAnimated:'>
+<arg type='B' index='0'/>
+<retval type='B'/>
+</method>
+</class>
+<class name='UIGestureRecognizer'>
+<method selector='canBePreventedByGestureRecognizer:'>
+<retval type='B'/>
+</method>
+<method selector='canPreventGestureRecognizer:'>
+<retval type='B'/>
+</method>
+<method selector='cancelsTouchesInView'>
+<retval type='B'/>
+</method>
+<method selector='delaysTouchesBegan'>
+<retval type='B'/>
+</method>
+<method selector='delaysTouchesEnded'>
+<retval type='B'/>
+</method>
+<method selector='isEnabled'>
+<retval type='B'/>
+</method>
+<method selector='setCancelsTouchesInView:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setDelaysTouchesBegan:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setDelaysTouchesEnded:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setEnabled:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='UIImagePickerController'>
+<method selector='allowsEditing'>
+<retval type='B'/>
+</method>
+<method selector='allowsImageEditing'>
+<retval type='B'/>
+</method>
+<method selector='isSourceTypeAvailable:' class_method='true'>
+<retval type='B'/>
+</method>
+<method selector='setAllowsEditing:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setAllowsImageEditing:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setShowsCameraControls:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='showsCameraControls'>
+<retval type='B'/>
+</method>
+</class>
+<class name='UIImageView'>
+<method selector='isAnimating'>
+<retval type='B'/>
+</method>
+<method selector='isHighlighted'>
+<retval type='B'/>
+</method>
+<method selector='isUserInteractionEnabled'>
+<retval type='B'/>
+</method>
+<method selector='setHighlighted:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setUserInteractionEnabled:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='UILabel'>
+<method selector='adjustsFontSizeToFitWidth'>
+<retval type='B'/>
+</method>
+<method selector='isEnabled'>
+<retval type='B'/>
+</method>
+<method selector='isHighlighted'>
+<retval type='B'/>
+</method>
+<method selector='isUserInteractionEnabled'>
+<retval type='B'/>
+</method>
+<method selector='setAdjustsFontSizeToFitWidth:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setEnabled:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setHighlighted:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setUserInteractionEnabled:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='UILocalNotification'>
+<method selector='hasAction'>
+<retval type='B'/>
+</method>
+<method selector='setHasAction:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='UIMenuController'>
+<method selector='isMenuVisible'>
+<retval type='B'/>
+</method>
+<method selector='setMenuVisible:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setMenuVisible:animated:'>
+<arg type='B' index='0'/>
+<arg type='B' index='1'/>
+</method>
+</class>
+<class name='UINavigationBar'>
+<method selector='isTranslucent'>
+<retval type='B'/>
+</method>
+<method selector='popNavigationItemAnimated:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='pushNavigationItem:animated:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='setItems:animated:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='setTranslucent:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='UINavigationController'>
+<method selector='isNavigationBarHidden'>
+<retval type='B'/>
+</method>
+<method selector='isToolbarHidden'>
+<retval type='B'/>
+</method>
+<method selector='popToRootViewControllerAnimated:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='popToViewController:animated:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='popViewControllerAnimated:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='pushViewController:animated:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='setNavigationBarHidden:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setNavigationBarHidden:animated:'>
+<arg type='B' index='0'/>
+<arg type='B' index='1'/>
+</method>
+<method selector='setToolbarHidden:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='UINavigationItem'>
+<method selector='hidesBackButton'>
+<retval type='B'/>
+</method>
+<method selector='setHidesBackButton:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setHidesBackButton:animated:'>
+<arg type='B' index='0'/>
+<arg type='B' index='1'/>
+</method>
+<method selector='setLeftBarButtonItem:animated:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='setRightBarButtonItem:animated:'>
+<arg type='B' index='1'/>
+</method>
+</class>
+<class name='UIPageControl'>
+<method selector='defersCurrentPageDisplay'>
+<retval type='B'/>
+</method>
+<method selector='hidesForSinglePage'>
+<retval type='B'/>
+</method>
+<method selector='setDefersCurrentPageDisplay:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setHidesForSinglePage:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='UIPasteboard'>
+<method selector='containsPasteboardTypes:'>
+<retval type='B'/>
+</method>
+<method selector='containsPasteboardTypes:inItemSet:'>
+<retval type='B'/>
+</method>
+<method selector='isPersistent'>
+<retval type='B'/>
+</method>
+<method selector='pasteboardWithName:create:' class_method='true'>
+<arg type='B' index='1'/>
+</method>
+<method selector='setPersistent:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='UIPickerView'>
+<method selector='selectRow:inComponent:animated:'>
+<arg type='B' index='2'/>
+</method>
+<method selector='setShowsSelectionIndicator:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='showsSelectionIndicator'>
+<retval type='B'/>
+</method>
+</class>
+<class name='UIPopoverController'>
+<method selector='dismissPopoverAnimated:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='isPopoverVisible'>
+<retval type='B'/>
+</method>
+<method selector='presentPopoverFromBarButtonItem:permittedArrowDirections:animated:'>
+<arg type='B' index='2'/>
+</method>
+<method selector='presentPopoverFromRect:inView:permittedArrowDirections:animated:'>
+<arg type='B' index='3'/>
+</method>
+<method selector='setContentViewController:animated:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='setPopoverContentSize:animated:'>
+<arg type='B' index='1'/>
+</method>
+</class>
+<class name='UIPrintInteractionController'>
+<method selector='canPrintData:' class_method='true'>
+<retval type='B'/>
+</method>
+<method selector='canPrintURL:' class_method='true'>
+<retval type='B'/>
+</method>
+<method selector='dismissAnimated:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='isPrintingAvailable' class_method='true'>
+<retval type='B'/>
+</method>
+<method selector='presentAnimated:completionHandler:'>
+<arg type='B' index='0'/>
+<arg function_pointer='true' type='@?' index='1'>
+<arg type='@'/>
+<arg type='B'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+<retval type='B'/>
+</method>
+<method selector='presentFromBarButtonItem:animated:completionHandler:'>
+<arg type='B' index='1'/>
+<arg function_pointer='true' type='@?' index='2'>
+<arg type='@'/>
+<arg type='B'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+<retval type='B'/>
+</method>
+<method selector='presentFromRect:inView:animated:completionHandler:'>
+<arg type='B' index='2'/>
+<arg function_pointer='true' type='@?' index='3'>
+<arg type='@'/>
+<arg type='B'/>
+<arg type='@'/>
+<retval type='v'/>
+</arg>
+<retval type='B'/>
+</method>
+<method selector='setShowsPageRange:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='showsPageRange'>
+<retval type='B'/>
+</method>
+</class>
+<class name='UIResponder'>
+<method selector='becomeFirstResponder'>
+<retval type='B'/>
+</method>
+<method selector='canBecomeFirstResponder'>
+<retval type='B'/>
+</method>
+<method selector='canResignFirstResponder'>
+<retval type='B'/>
+</method>
+<method selector='isFirstResponder'>
+<retval type='B'/>
+</method>
+<method selector='resignFirstResponder'>
+<retval type='B'/>
+</method>
+</class>
+<class name='UIScrollView'>
+<method selector='alwaysBounceHorizontal'>
+<retval type='B'/>
+</method>
+<method selector='alwaysBounceVertical'>
+<retval type='B'/>
+</method>
+<method selector='bounces'>
+<retval type='B'/>
+</method>
+<method selector='bouncesZoom'>
+<retval type='B'/>
+</method>
+<method selector='canCancelContentTouches'>
+<retval type='B'/>
+</method>
+<method selector='delaysContentTouches'>
+<retval type='B'/>
+</method>
+<method selector='isDecelerating'>
+<retval type='B'/>
+</method>
+<method selector='isDirectionalLockEnabled'>
+<retval type='B'/>
+</method>
+<method selector='isDragging'>
+<retval type='B'/>
+</method>
+<method selector='isPagingEnabled'>
+<retval type='B'/>
+</method>
+<method selector='isScrollEnabled'>
+<retval type='B'/>
+</method>
+<method selector='isTracking'>
+<retval type='B'/>
+</method>
+<method selector='isZoomBouncing'>
+<retval type='B'/>
+</method>
+<method selector='isZooming'>
+<retval type='B'/>
+</method>
+<method selector='scrollRectToVisible:animated:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='scrollsToTop'>
+<retval type='B'/>
+</method>
+<method selector='setAlwaysBounceHorizontal:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setAlwaysBounceVertical:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setBounces:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setBouncesZoom:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setCanCancelContentTouches:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setContentOffset:animated:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='setDelaysContentTouches:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setDirectionalLockEnabled:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setPagingEnabled:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setScrollEnabled:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setScrollsToTop:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setShowsHorizontalScrollIndicator:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setShowsVerticalScrollIndicator:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='showsHorizontalScrollIndicator'>
+<retval type='B'/>
+</method>
+<method selector='showsVerticalScrollIndicator'>
+<retval type='B'/>
+</method>
+<method selector='touchesShouldBegin:withEvent:inContentView:'>
+<retval type='B'/>
+</method>
+<method selector='touchesShouldCancelInContentView:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='UISearchBar'>
+<method selector='isSearchResultsButtonSelected'>
+<retval type='B'/>
+</method>
+<method selector='isTranslucent'>
+<retval type='B'/>
+</method>
+<method selector='setSearchResultsButtonSelected:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setShowsBookmarkButton:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setShowsCancelButton:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setShowsScopeBar:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setShowsSearchResultsButton:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setTranslucent:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='showsBookmarkButton'>
+<retval type='B'/>
+</method>
+<method selector='showsCancelButton'>
+<retval type='B'/>
+</method>
+<method selector='showsScopeBar'>
+<retval type='B'/>
+</method>
+<method selector='showsSearchResultsButton'>
+<retval type='B'/>
+</method>
+</class>
+<class name='UISearchDisplayController'>
+<method selector='isActive'>
+<retval type='B'/>
+</method>
+<method selector='setActive:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setActive:animated:'>
+<arg type='B' index='0'/>
+<arg type='B' index='1'/>
+</method>
+</class>
+<class name='UISegmentedControl'>
+<method selector='insertSegmentWithImage:atIndex:animated:'>
+<arg type='B' index='2'/>
+</method>
+<method selector='insertSegmentWithTitle:atIndex:animated:'>
+<arg type='B' index='2'/>
+</method>
+<method selector='isEnabledForSegmentAtIndex:'>
+<retval type='B'/>
+</method>
+<method selector='isMomentary'>
+<retval type='B'/>
+</method>
+<method selector='removeSegmentAtIndex:animated:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='setEnabled:forSegmentAtIndex:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setMomentary:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='UISlider'>
+<method selector='isContinuous'>
+<retval type='B'/>
+</method>
+<method selector='setContinuous:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setValue:animated:'>
+<arg type='B' index='1'/>
+</method>
+</class>
+<class name='UISwitch'>
+<method selector='isOn'>
+<retval type='B'/>
+</method>
+<method selector='setOn:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setOn:animated:'>
+<arg type='B' index='0'/>
+<arg type='B' index='1'/>
+</method>
+</class>
+<class name='UITabBar'>
+<method selector='endCustomizingAnimated:'>
+<arg type='B' index='0'/>
+<retval type='B'/>
+</method>
+<method selector='isCustomizing'>
+<retval type='B'/>
+</method>
+<method selector='setItems:animated:'>
+<arg type='B' index='1'/>
+</method>
+</class>
+<class name='UITabBarController'>
+<method selector='setViewControllers:animated:'>
+<arg type='B' index='1'/>
+</method>
+</class>
+<class name='UITableView'>
+<method selector='allowsSelection'>
+<retval type='B'/>
+</method>
+<method selector='allowsSelectionDuringEditing'>
+<retval type='B'/>
+</method>
+<method selector='deselectRowAtIndexPath:animated:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='isEditing'>
+<retval type='B'/>
+</method>
+<method selector='scrollToNearestSelectedRowAtScrollPosition:animated:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='scrollToRowAtIndexPath:atScrollPosition:animated:'>
+<arg type='B' index='2'/>
+</method>
+<method selector='selectRowAtIndexPath:animated:scrollPosition:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='setAllowsSelection:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setAllowsSelectionDuringEditing:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setEditing:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setEditing:animated:'>
+<arg type='B' index='0'/>
+<arg type='B' index='1'/>
+</method>
+</class>
+<class name='UITableViewCell'>
+<method selector='hidesAccessoryWhenEditing'>
+<retval type='B'/>
+</method>
+<method selector='isEditing'>
+<retval type='B'/>
+</method>
+<method selector='isHighlighted'>
+<retval type='B'/>
+</method>
+<method selector='isSelected'>
+<retval type='B'/>
+</method>
+<method selector='setEditing:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setEditing:animated:'>
+<arg type='B' index='0'/>
+<arg type='B' index='1'/>
+</method>
+<method selector='setHidesAccessoryWhenEditing:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setHighlighted:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setHighlighted:animated:'>
+<arg type='B' index='0'/>
+<arg type='B' index='1'/>
+</method>
+<method selector='setSelected:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setSelected:animated:'>
+<arg type='B' index='0'/>
+<arg type='B' index='1'/>
+</method>
+<method selector='setShouldIndentWhileEditing:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setShowsReorderControl:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='shouldIndentWhileEditing'>
+<retval type='B'/>
+</method>
+<method selector='showingDeleteConfirmation'>
+<retval type='B'/>
+</method>
+<method selector='showsReorderControl'>
+<retval type='B'/>
+</method>
+</class>
+<class name='UITableViewController'>
+<method selector='clearsSelectionOnViewWillAppear'>
+<retval type='B'/>
+</method>
+<method selector='setClearsSelectionOnViewWillAppear:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='UITextChecker'>
+<method selector='hasLearnedWord:' class_method='true'>
+<retval type='B'/>
+</method>
+<method selector='rangeOfMisspelledWordInString:range:startingAt:wrap:language:'>
+<arg type='B' index='3'/>
+</method>
+</class>
+<class name='UITextField'>
+<method selector='adjustsFontSizeToFitWidth'>
+<retval type='B'/>
+</method>
+<method selector='clearsOnBeginEditing'>
+<retval type='B'/>
+</method>
+<method selector='isEditing'>
+<retval type='B'/>
+</method>
+<method selector='setAdjustsFontSizeToFitWidth:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setClearsOnBeginEditing:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='UITextRange'>
+<method selector='isEmpty'>
+<retval type='B'/>
+</method>
+</class>
+<class name='UITextView'>
+<method selector='hasText'>
+<retval type='B'/>
+</method>
+<method selector='isEditable'>
+<retval type='B'/>
+</method>
+<method selector='setEditable:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='UIToolbar'>
+<method selector='isTranslucent'>
+<retval type='B'/>
+</method>
+<method selector='setItems:animated:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='setTranslucent:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='UIView'>
+<method selector='areAnimationsEnabled' class_method='true'>
+<retval type='B'/>
+</method>
+<method selector='autoresizesSubviews'>
+<retval type='B'/>
+</method>
+<method selector='clearsContextBeforeDrawing'>
+<retval type='B'/>
+</method>
+<method selector='clipsToBounds'>
+<retval type='B'/>
+</method>
+<method selector='endEditing:'>
+<arg type='B' index='0'/>
+<retval type='B'/>
+</method>
+<method selector='isDescendantOfView:'>
+<retval type='B'/>
+</method>
+<method selector='isExclusiveTouch'>
+<retval type='B'/>
+</method>
+<method selector='isHidden'>
+<retval type='B'/>
+</method>
+<method selector='isMultipleTouchEnabled'>
+<retval type='B'/>
+</method>
+<method selector='isOpaque'>
+<retval type='B'/>
+</method>
+<method selector='isUserInteractionEnabled'>
+<retval type='B'/>
+</method>
+<method selector='pointInside:withEvent:'>
+<retval type='B'/>
+</method>
+<method selector='setAnimationBeginsFromCurrentState:' class_method='true'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setAnimationRepeatAutoreverses:' class_method='true'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setAnimationTransition:forView:cache:' class_method='true'>
+<arg type='B' index='2'/>
+</method>
+<method selector='setAnimationsEnabled:' class_method='true'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setAutoresizesSubviews:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setClearsContextBeforeDrawing:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setClipsToBounds:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setExclusiveTouch:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setHidden:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setMultipleTouchEnabled:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setOpaque:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setUserInteractionEnabled:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='UIViewController'>
+<method selector='dismissModalViewControllerAnimated:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='hidesBottomBarWhenPushed'>
+<retval type='B'/>
+</method>
+<method selector='isEditing'>
+<retval type='B'/>
+</method>
+<method selector='isModalInPopover'>
+<retval type='B'/>
+</method>
+<method selector='presentModalViewController:animated:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='setEditing:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setEditing:animated:'>
+<arg type='B' index='0'/>
+<arg type='B' index='1'/>
+</method>
+<method selector='setHidesBottomBarWhenPushed:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setModalInPopover:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setWantsFullScreenLayout:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='shouldAutorotateToInterfaceOrientation:'>
+<retval type='B'/>
+</method>
+<method selector='viewDidAppear:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='viewDidDisappear:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='viewWillAppear:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='viewWillDisappear:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='wantsFullScreenLayout'>
+<retval type='B'/>
+</method>
+</class>
+<class name='UIWebView'>
+<method selector='allowsInlineMediaPlayback'>
+<retval type='B'/>
+</method>
+<method selector='canGoBack'>
+<retval type='B'/>
+</method>
+<method selector='canGoForward'>
+<retval type='B'/>
+</method>
+<method selector='detectsPhoneNumbers'>
+<retval type='B'/>
+</method>
+<method selector='isLoading'>
+<retval type='B'/>
+</method>
+<method selector='mediaPlaybackRequiresUserAction'>
+<retval type='B'/>
+</method>
+<method selector='scalesPageToFit'>
+<retval type='B'/>
+</method>
+<method selector='setAllowsInlineMediaPlayback:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setDetectsPhoneNumbers:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setMediaPlaybackRequiresUserAction:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setScalesPageToFit:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='UIWindow'>
+<method selector='isKeyWindow'>
+<retval type='B'/>
+</method>
+</class>
+<informal_protocol name='UIAccelerometerDelegate'>
+<method type='v16@0:4@8@12' selector='accelerometer:didAccelerate:'/>
+</informal_protocol>
+<informal_protocol name='UIAccessibility'>
+<method type='{CGRect={CGPoint=ff}{CGSize=ff}}8@0:4' selector='accessibilityFrame'/>
+<method type='@8@0:4' selector='accessibilityHint'/>
+<method type='@8@0:4' selector='accessibilityLabel'/>
+<method type='@8@0:4' selector='accessibilityLanguage'/>
+<method type='Q8@0:4' selector='accessibilityTraits'/>
+<method type='@8@0:4' selector='accessibilityValue'/>
+<method type='B8@0:4' selector='isAccessibilityElement'/>
+<method type='v24@0:4{CGRect={CGPoint=ff}{CGSize=ff}}8' selector='setAccessibilityFrame:'/>
+<method type='v12@0:4@8' selector='setAccessibilityHint:'/>
+<method type='v12@0:4@8' selector='setAccessibilityLabel:'/>
+<method type='v12@0:4@8' selector='setAccessibilityLanguage:'/>
+<method type='v16@0:4Q8' selector='setAccessibilityTraits:'/>
+<method type='v12@0:4@8' selector='setAccessibilityValue:'/>
+<method type='v12@0:4B8' selector='setIsAccessibilityElement:'/>
+</informal_protocol>
+<informal_protocol name='UIAccessibilityContainer'>
+<method type='@12@0:4i8' selector='accessibilityElementAtIndex:'/>
+<method type='i8@0:4' selector='accessibilityElementCount'/>
+<method type='i12@0:4@8' selector='indexOfAccessibilityElement:'/>
+</informal_protocol>
+<informal_protocol name='UIActionSheetDelegate'>
+<method type='v16@0:4@8i12' selector='actionSheet:clickedButtonAtIndex:'/>
+<method type='v16@0:4@8i12' selector='actionSheet:didDismissWithButtonIndex:'/>
+<method type='v16@0:4@8i12' selector='actionSheet:willDismissWithButtonIndex:'/>
+<method type='v12@0:4@8' selector='actionSheetCancel:'/>
+<method type='v12@0:4@8' selector='didPresentActionSheet:'/>
+<method type='v12@0:4@8' selector='willPresentActionSheet:'/>
+</informal_protocol>
+<informal_protocol name='UIAlertViewDelegate'>
+<method type='v16@0:4@8i12' selector='alertView:clickedButtonAtIndex:'/>
+<method type='v16@0:4@8i12' selector='alertView:didDismissWithButtonIndex:'/>
+<method type='v16@0:4@8i12' selector='alertView:willDismissWithButtonIndex:'/>
+<method type='v12@0:4@8' selector='alertViewCancel:'/>
+<method type='v12@0:4@8' selector='didPresentAlertView:'/>
+<method type='v12@0:4@8' selector='willPresentAlertView:'/>
+</informal_protocol>
+<informal_protocol name='UIApplicationDelegate'>
+<method type='v28@0:4@8{CGRect={CGPoint=ff}{CGSize=ff}}12' selector='application:didChangeStatusBarFrame:'/>
+<method type='v16@0:4@8i12' selector='application:didChangeStatusBarOrientation:'/>
+<method type='B16@0:4@8@12' selector='application:handleOpenURL:'/>
+<method type='v28@0:4@8{CGRect={CGPoint=ff}{CGSize=ff}}12' selector='application:willChangeStatusBarFrame:'/>
+<method type='v24@0:4@8i12d16' selector='application:willChangeStatusBarOrientation:duration:'/>
+<method type='v12@0:4@8' selector='applicationDidBecomeActive:'/>
+<method type='v12@0:4@8' selector='applicationDidFinishLaunching:'/>
+<method type='v12@0:4@8' selector='applicationDidReceiveMemoryWarning:'/>
+<method type='v12@0:4@8' selector='applicationSignificantTimeChange:'/>
+<method type='v12@0:4@8' selector='applicationWillResignActive:'/>
+<method type='v12@0:4@8' selector='applicationWillTerminate:'/>
+</informal_protocol>
+<informal_protocol name='UIDocumentInteractionControllerDelegate'>
+<method type='B16@0:4@8:12' selector='documentInteractionController:canPerformAction:'/>
+<method type='v16@0:4@8@12' selector='documentInteractionController:didEndSendingToApplication:'/>
+<method type='B16@0:4@8:12' selector='documentInteractionController:performAction:'/>
+<method type='v16@0:4@8@12' selector='documentInteractionController:willBeginSendingToApplication:'/>
+<method type='v12@0:4@8' selector='documentInteractionControllerDidDismissOpenInMenu:'/>
+<method type='v12@0:4@8' selector='documentInteractionControllerDidDismissOptionsMenu:'/>
+<method type='v12@0:4@8' selector='documentInteractionControllerDidEndPreview:'/>
+<method type='{CGRect={CGPoint=ff}{CGSize=ff}}12@0:4@8' selector='documentInteractionControllerRectForPreview:'/>
+<method type='@12@0:4@8' selector='documentInteractionControllerViewControllerForPreview:'/>
+<method type='@12@0:4@8' selector='documentInteractionControllerViewForPreview:'/>
+<method type='v12@0:4@8' selector='documentInteractionControllerWillBeginPreview:'/>
+<method type='v12@0:4@8' selector='documentInteractionControllerWillPresentOpenInMenu:'/>
+<method type='v12@0:4@8' selector='documentInteractionControllerWillPresentOptionsMenu:'/>
+</informal_protocol>
+<informal_protocol name='UIGestureRecognizerDelegate'>
+<method type='B16@0:4@8@12' selector='gestureRecognizer:shouldReceiveTouch:'/>
+<method type='B16@0:4@8@12' selector='gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:'/>
+<method type='B12@0:4@8' selector='gestureRecognizerShouldBegin:'/>
+</informal_protocol>
+<informal_protocol name='UIImagePickerControllerDelegate'>
+<method type='v16@0:4@8@12' selector='imagePickerController:didFinishPickingMediaWithInfo:'/>
+<method type='v12@0:4@8' selector='imagePickerControllerDidCancel:'/>
+</informal_protocol>
+<informal_protocol name='UIInputViewAudioFeedback'>
+<method type='B8@0:4' selector='enableInputClicksWhenVisible'/>
+</informal_protocol>
+<informal_protocol name='UIKeyInput'>
+<method type='v8@0:4' selector='deleteBackward'/>
+<method type='B8@0:4' selector='hasText'/>
+<method type='v12@0:4@8' selector='insertText:'/>
+</informal_protocol>
+<informal_protocol name='UINavigationBarDelegate'>
+<method type='v16@0:4@8@12' selector='navigationBar:didPopItem:'/>
+<method type='v16@0:4@8@12' selector='navigationBar:didPushItem:'/>
+<method type='B16@0:4@8@12' selector='navigationBar:shouldPopItem:'/>
+<method type='B16@0:4@8@12' selector='navigationBar:shouldPushItem:'/>
+</informal_protocol>
+<informal_protocol name='UINavigationControllerDelegate'>
+<method type='v20@0:4@8@12B16' selector='navigationController:didShowViewController:animated:'/>
+<method type='v20@0:4@8@12B16' selector='navigationController:willShowViewController:animated:'/>
+</informal_protocol>
+<informal_protocol name='UINibLoadingAdditions'>
+<method type='v8@0:4' selector='awakeFromNib'/>
+</informal_protocol>
+<informal_protocol name='UIPickerViewAccessibilityDelegate'>
+<method type='@16@0:4@8i12' selector='pickerView:accessibilityHintForComponent:'/>
+<method type='@16@0:4@8i12' selector='pickerView:accessibilityLabelForComponent:'/>
+</informal_protocol>
+<informal_protocol name='UIPickerViewDataSource'>
+<method type='i12@0:4@8' selector='numberOfComponentsInPickerView:'/>
+<method type='i16@0:4@8i12' selector='pickerView:numberOfRowsInComponent:'/>
+</informal_protocol>
+<informal_protocol name='UIPickerViewDelegate'>
+<method type='v20@0:4@8i12i16' selector='pickerView:didSelectRow:inComponent:'/>
+<method type='f16@0:4@8i12' selector='pickerView:rowHeightForComponent:'/>
+<method type='@20@0:4@8i12i16' selector='pickerView:titleForRow:forComponent:'/>
+<method type='@24@0:4@8i12i16@20' selector='pickerView:viewForRow:forComponent:reusingView:'/>
+<method type='f16@0:4@8i12' selector='pickerView:widthForComponent:'/>
+</informal_protocol>
+<informal_protocol name='UIPopoverControllerDelegate'>
+<method type='v12@0:4@8' selector='popoverControllerDidDismissPopover:'/>
+<method type='B12@0:4@8' selector='popoverControllerShouldDismissPopover:'/>
+</informal_protocol>
+<informal_protocol name='UIPrintInteractionControllerDelegate'>
+<method type='@16@0:4@8@12' selector='printInteractionController:choosePaper:'/>
+<method type='v12@0:4@8' selector='printInteractionControllerDidDismissPrinterOptions:'/>
+<method type='v12@0:4@8' selector='printInteractionControllerDidFinishJob:'/>
+<method type='v12@0:4@8' selector='printInteractionControllerDidPresentPrinterOptions:'/>
+<method type='@12@0:4@8' selector='printInteractionControllerParentViewController:'/>
+<method type='v12@0:4@8' selector='printInteractionControllerWillDismissPrinterOptions:'/>
+<method type='v12@0:4@8' selector='printInteractionControllerWillPresentPrinterOptions:'/>
+<method type='v12@0:4@8' selector='printInteractionControllerWillStartJob:'/>
+</informal_protocol>
+<informal_protocol name='UIScrollViewDelegate'>
+<method type='v12@0:4@8' selector='scrollViewDidEndDecelerating:'/>
+<method type='v16@0:4@8B12' selector='scrollViewDidEndDragging:willDecelerate:'/>
+<method type='v12@0:4@8' selector='scrollViewDidEndScrollingAnimation:'/>
+<method type='v20@0:4@8@12f16' selector='scrollViewDidEndZooming:withView:atScale:'/>
+<method type='v12@0:4@8' selector='scrollViewDidScroll:'/>
+<method type='v12@0:4@8' selector='scrollViewDidScrollToTop:'/>
+<method type='B12@0:4@8' selector='scrollViewShouldScrollToTop:'/>
+<method type='v12@0:4@8' selector='scrollViewWillBeginDecelerating:'/>
+<method type='v12@0:4@8' selector='scrollViewWillBeginDragging:'/>
+<method type='@12@0:4@8' selector='viewForZoomingInScrollView:'/>
+</informal_protocol>
+<informal_protocol name='UISearchBarDelegate'>
+<method type='v16@0:4@8@12' selector='searchBar:textDidChange:'/>
+<method type='v12@0:4@8' selector='searchBarBookmarkButtonClicked:'/>
+<method type='v12@0:4@8' selector='searchBarCancelButtonClicked:'/>
+<method type='v12@0:4@8' selector='searchBarSearchButtonClicked:'/>
+<method type='B12@0:4@8' selector='searchBarShouldBeginEditing:'/>
+<method type='B12@0:4@8' selector='searchBarShouldEndEditing:'/>
+<method type='v12@0:4@8' selector='searchBarTextDidBeginEditing:'/>
+<method type='v12@0:4@8' selector='searchBarTextDidEndEditing:'/>
+</informal_protocol>
+<informal_protocol name='UISearchDisplayDelegate'>
+<method type='v16@0:4@8@12' selector='searchDisplayController:didHideSearchResultsTableView:'/>
+<method type='v16@0:4@8@12' selector='searchDisplayController:didLoadSearchResultsTableView:'/>
+<method type='v16@0:4@8@12' selector='searchDisplayController:didShowSearchResultsTableView:'/>
+<method type='B16@0:4@8i12' selector='searchDisplayController:shouldReloadTableForSearchScope:'/>
+<method type='B16@0:4@8@12' selector='searchDisplayController:shouldReloadTableForSearchString:'/>
+<method type='v16@0:4@8@12' selector='searchDisplayController:willHideSearchResultsTableView:'/>
+<method type='v16@0:4@8@12' selector='searchDisplayController:willShowSearchResultsTableView:'/>
+<method type='v16@0:4@8@12' selector='searchDisplayController:willUnloadSearchResultsTableView:'/>
+<method type='v12@0:4@8' selector='searchDisplayControllerDidBeginSearch:'/>
+<method type='v12@0:4@8' selector='searchDisplayControllerDidEndSearch:'/>
+<method type='v12@0:4@8' selector='searchDisplayControllerWillBeginSearch:'/>
+<method type='v12@0:4@8' selector='searchDisplayControllerWillEndSearch:'/>
+</informal_protocol>
+<informal_protocol name='UISplitViewControllerDelegate'>
+<method type='v20@0:4@8@12@16' selector='splitViewController:popoverController:willPresentViewController:'/>
+<method type='v24@0:4@8@12@16@20' selector='splitViewController:willHideViewController:withBarButtonItem:forPopoverController:'/>
+<method type='v20@0:4@8@12@16' selector='splitViewController:willShowViewController:invalidatingBarButtonItem:'/>
+</informal_protocol>
+<informal_protocol name='UITabBarControllerDelegate'>
+<method type='v20@0:4@8@12B16' selector='tabBarController:didEndCustomizingViewControllers:changed:'/>
+<method type='v16@0:4@8@12' selector='tabBarController:didSelectViewController:'/>
+</informal_protocol>
+<informal_protocol name='UITabBarDelegate'>
+<method type='v16@0:4@8@12' selector='tabBar:didBeginCustomizingItems:'/>
+<method type='v20@0:4@8@12B16' selector='tabBar:didEndCustomizingItems:changed:'/>
+<method type='v16@0:4@8@12' selector='tabBar:didSelectItem:'/>
+<method type='v16@0:4@8@12' selector='tabBar:willBeginCustomizingItems:'/>
+<method type='v20@0:4@8@12B16' selector='tabBar:willEndCustomizingItems:changed:'/>
+</informal_protocol>
+<informal_protocol name='UITableViewDataSource'>
+<method type='i12@0:4@8' selector='numberOfSectionsInTableView:'/>
+<method type='@12@0:4@8' selector='sectionIndexTitlesForTableView:'/>
+<method type='B16@0:4@8@12' selector='tableView:canEditRowAtIndexPath:'/>
+<method type='B16@0:4@8@12' selector='tableView:canMoveRowAtIndexPath:'/>
+<method type='@16@0:4@8@12' selector='tableView:cellForRowAtIndexPath:'/>
+<method type='v20@0:4@8i12@16' selector='tableView:commitEditingStyle:forRowAtIndexPath:'/>
+<method type='v20@0:4@8@12@16' selector='tableView:moveRowAtIndexPath:toIndexPath:'/>
+<method type='i16@0:4@8i12' selector='tableView:numberOfRowsInSection:'/>
+<method type='i20@0:4@8@12i16' selector='tableView:sectionForSectionIndexTitle:atIndex:'/>
+<method type='@16@0:4@8i12' selector='tableView:titleForFooterInSection:'/>
+<method type='@16@0:4@8i12' selector='tableView:titleForHeaderInSection:'/>
+</informal_protocol>
+<informal_protocol name='UITableViewDelegate'>
+<method type='v16@0:4@8@12' selector='tableView:accessoryButtonTappedForRowWithIndexPath:'/>
+<method type='v16@0:4@8@12' selector='tableView:didEndEditingRowAtIndexPath:'/>
+<method type='v16@0:4@8@12' selector='tableView:didSelectRowAtIndexPath:'/>
+<method type='i16@0:4@8@12' selector='tableView:editingStyleForRowAtIndexPath:'/>
+<method type='f16@0:4@8i12' selector='tableView:heightForFooterInSection:'/>
+<method type='f16@0:4@8i12' selector='tableView:heightForHeaderInSection:'/>
+<method type='f16@0:4@8@12' selector='tableView:heightForRowAtIndexPath:'/>
+<method type='i16@0:4@8@12' selector='tableView:indentationLevelForRowAtIndexPath:'/>
+<method type='B16@0:4@8@12' selector='tableView:shouldIndentWhileEditingRowAtIndexPath:'/>
+<method type='@20@0:4@8@12@16' selector='tableView:targetIndexPathForMoveFromRowAtIndexPath:toProposedIndexPath:'/>
+<method type='@16@0:4@8i12' selector='tableView:viewForFooterInSection:'/>
+<method type='@16@0:4@8i12' selector='tableView:viewForHeaderInSection:'/>
+<method type='v16@0:4@8@12' selector='tableView:willBeginEditingRowAtIndexPath:'/>
+<method type='v20@0:4@8@12@16' selector='tableView:willDisplayCell:forRowAtIndexPath:'/>
+<method type='@16@0:4@8@12' selector='tableView:willSelectRowAtIndexPath:'/>
+</informal_protocol>
+<informal_protocol name='UITextFieldDelegate'>
+<method type='B24@0:4@8{_NSRange=II}12@20' selector='textField:shouldChangeCharactersInRange:replacementString:'/>
+<method type='v12@0:4@8' selector='textFieldDidBeginEditing:'/>
+<method type='v12@0:4@8' selector='textFieldDidEndEditing:'/>
+<method type='B12@0:4@8' selector='textFieldShouldBeginEditing:'/>
+<method type='B12@0:4@8' selector='textFieldShouldClear:'/>
+<method type='B12@0:4@8' selector='textFieldShouldEndEditing:'/>
+<method type='B12@0:4@8' selector='textFieldShouldReturn:'/>
+</informal_protocol>
+<informal_protocol name='UITextInput'>
+<method type='i16@0:4@8i12' selector='baseWritingDirectionForPosition:inDirection:'/>
+<method type='@8@0:4' selector='beginningOfDocument'/>
+<method type='{CGRect={CGPoint=ff}{CGSize=ff}}12@0:4@8' selector='caretRectForPosition:'/>
+<method type='i16@0:4@8@12' selector='characterOffsetOfPosition:withinRange:'/>
+<method type='@16@0:4{CGPoint=ff}8' selector='characterRangeAtPoint:'/>
+<method type='@16@0:4@8i12' selector='characterRangeByExtendingPosition:inDirection:'/>
+<method type='@16@0:4{CGPoint=ff}8' selector='closestPositionToPoint:'/>
+<method type='@20@0:4{CGPoint=ff}8@16' selector='closestPositionToPoint:withinRange:'/>
+<method type='i16@0:4@8@12' selector='comparePosition:toPosition:'/>
+<method type='@8@0:4' selector='endOfDocument'/>
+<method type='{CGRect={CGPoint=ff}{CGSize=ff}}12@0:4@8' selector='firstRectForRange:'/>
+<method type='@8@0:4' selector='inputDelegate'/>
+<method type='@8@0:4' selector='markedTextRange'/>
+<method type='@8@0:4' selector='markedTextStyle'/>
+<method type='i16@0:4@8@12' selector='offsetFromPosition:toPosition:'/>
+<method type='@20@0:4@8i12i16' selector='positionFromPosition:inDirection:offset:'/>
+<method type='@16@0:4@8i12' selector='positionFromPosition:offset:'/>
+<method type='@16@0:4@8i12' selector='positionWithinRange:atCharacterOffset:'/>
+<method type='@16@0:4@8i12' selector='positionWithinRange:farthestInDirection:'/>
+<method type='v16@0:4@8@12' selector='replaceRange:withText:'/>
+<method type='@8@0:4' selector='selectedTextRange'/>
+<method type='i8@0:4' selector='selectionAffinity'/>
+<method type='v16@0:4i8@12' selector='setBaseWritingDirection:forRange:'/>
+<method type='v12@0:4@8' selector='setInputDelegate:'/>
+<method type='v20@0:4@8{_NSRange=II}12' selector='setMarkedText:selectedRange:'/>
+<method type='v12@0:4@8' selector='setMarkedTextStyle:'/>
+<method type='v12@0:4@8' selector='setSelectedTextRange:'/>
+<method type='v12@0:4i8' selector='setSelectionAffinity:'/>
+<method type='@12@0:4@8' selector='textInRange:'/>
+<method type='@8@0:4' selector='textInputView'/>
+<method type='@16@0:4@8@12' selector='textRangeFromPosition:toPosition:'/>
+<method type='@16@0:4@8i12' selector='textStylingAtPosition:inDirection:'/>
+<method type='@8@0:4' selector='tokenizer'/>
+<method type='v8@0:4' selector='unmarkText'/>
+</informal_protocol>
+<informal_protocol name='UITextInputDelegate'>
+<method type='v12@0:4@8' selector='selectionDidChange:'/>
+<method type='v12@0:4@8' selector='selectionWillChange:'/>
+<method type='v12@0:4@8' selector='textDidChange:'/>
+<method type='v12@0:4@8' selector='textWillChange:'/>
+</informal_protocol>
+<informal_protocol name='UITextInputTokenizer'>
+<method type='B20@0:4@8i12i16' selector='isPosition:atBoundary:inDirection:'/>
+<method type='B20@0:4@8i12i16' selector='isPosition:withinTextUnit:inDirection:'/>
+<method type='@20@0:4@8i12i16' selector='positionFromPosition:toBoundary:inDirection:'/>
+<method type='@20@0:4@8i12i16' selector='rangeEnclosingPosition:withGranularity:inDirection:'/>
+</informal_protocol>
+<informal_protocol name='UITextInputTraits'>
+<method type='i8@0:4' selector='autocapitalizationType'/>
+<method type='i8@0:4' selector='autocorrectionType'/>
+<method type='B8@0:4' selector='enablesReturnKeyAutomatically'/>
+<method type='B8@0:4' selector='isSecureTextEntry'/>
+<method type='i8@0:4' selector='keyboardAppearance'/>
+<method type='i8@0:4' selector='keyboardType'/>
+<method type='i8@0:4' selector='returnKeyType'/>
+<method type='v12@0:4i8' selector='setAutocapitalizationType:'/>
+<method type='v12@0:4i8' selector='setAutocorrectionType:'/>
+<method type='v12@0:4B8' selector='setEnablesReturnKeyAutomatically:'/>
+<method type='v12@0:4i8' selector='setKeyboardAppearance:'/>
+<method type='v12@0:4i8' selector='setKeyboardType:'/>
+<method type='v12@0:4i8' selector='setReturnKeyType:'/>
+<method type='v12@0:4B8' selector='setSecureTextEntry:'/>
+</informal_protocol>
+<informal_protocol name='UITextViewDelegate'>
+<method type='B24@0:4@8{_NSRange=II}12@20' selector='textView:shouldChangeTextInRange:replacementText:'/>
+<method type='v12@0:4@8' selector='textViewDidBeginEditing:'/>
+<method type='v12@0:4@8' selector='textViewDidChange:'/>
+<method type='v12@0:4@8' selector='textViewDidChangeSelection:'/>
+<method type='v12@0:4@8' selector='textViewDidEndEditing:'/>
+<method type='B12@0:4@8' selector='textViewShouldBeginEditing:'/>
+<method type='B12@0:4@8' selector='textViewShouldEndEditing:'/>
+</informal_protocol>
+<informal_protocol name='UIVideoEditorControllerDelegate'>
+<method type='v16@0:4@8@12' selector='videoEditorController:didFailWithError:'/>
+<method type='v16@0:4@8@12' selector='videoEditorController:didSaveEditedVideoToPath:'/>
+<method type='v12@0:4@8' selector='videoEditorControllerDidCancel:'/>
+</informal_protocol>
+<informal_protocol name='UIWebViewDelegate'>
+<method type='v16@0:4@8@12' selector='webView:didFailLoadWithError:'/>
+<method type='B20@0:4@8@12I16' selector='webView:shouldStartLoadWithRequest:navigationType:'/>
+<method type='v12@0:4@8' selector='webViewDidFinishLoad:'/>
+<method type='v12@0:4@8' selector='webViewDidStartLoad:'/>
+</informal_protocol>
+</signatures>
