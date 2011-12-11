@@ -2,34 +2,34 @@ BridgeSupport Files for iOS.
 ====================
 Working
 ---------------------
-* AVFoundation.framework
-* Accelerate.framework
-* AddressBook.framework
-* AddressBookUI.framework
-* AssetsLibrary.framework
-* AudioToolbox.framework
-* CoreAudio.framework
-* CoreData.framework
-* CoreLocation.framework
-* CoreMIDI.framework
-* CoreMotion.framework
-* CoreTelephony.framework
-* EventKit.framework
-* EventKitUI.framework
-* ExternalAccessory.framework
-* Foundation.framework
-* GameKit.framework
-* MapKit.framework
-* MediaPlayer.framework
-* MessageUI.framework
-* MobileCoreServices.framework
-* OpenAL.framework
-* OpenGLES.framework
-* QuartzCore.framework
-* QuickLook.framework
-* StoreKit.framework
-* UIKit.framework
-* iAd.framework
+* AVFoundation
+* Accelerate
+* AddressBook
+* AddressBookUI
+* AssetsLibrary
+* AudioToolbox
+* CoreAudio
+* CoreData
+* CoreLocation
+* CoreMIDI
+* CoreMotion
+* CoreTelephony
+* EventKit
+* EventKitUI
+* ExternalAccessory
+* Foundation
+* GameKit
+* MapKit
+* MediaPlayer
+* MessageUI
+* MobileCoreServices
+* OpenAL
+* OpenGLES
+* QuartzCore
+* QuickLook
+* StoreKit
+* UIKit
+* iAd
 
 Missing
 ---------------------
