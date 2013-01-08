@@ -1,5 +1,7 @@
 #/bin/bash
 
+#gen_bridge_metadata -F complete -f ./CoreGraphics.framework -o here.bridgesupport -c "-isysroot //Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk" -d
+
 rm -rf output
 mkdir output
 
